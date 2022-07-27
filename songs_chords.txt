@@ -1,0 +1,386 @@
+# I = Intro
+# V = Verse
+# P = Pre-chorus
+# C = Chorus
+# Po = Post-chorus
+# B = Bridge
+# D = Interlude / Dance Break
+# O = Outro
+# E = Other
+# A = All (default value), equivalent to (I,V,P,C,Po,B,D,O,E)
+# AB = All but Bridge, equivalent to (I,V,P,C,Po,D,O,E)
+# AP = All but Pre-chorus, equivalent to (I,V,C,Po,B,D,O,E)
+
+# If no forward slashes are written after the chord name, the chord will be played for all four beats in the bar.
+# Otherwise, the number of slashes after the chord name will specify how many beats the chord will be played for.
+# e.g. in :Gm//C7//:, Gm will be played for two beats and then C7 will be played for two beats.
+# In :Eb/F/Bb//:, Eb and F will each be played for one beat and then Bb will be played for two.
+
+# Important! Do not enter slash chords, enter the basic parent chord instead. ("C" instead of "C/G" or "C/F" etc.)
+
+# The only time signature supported at the moment is 4/4.
+# Do not use curly brackets () in the song name.
+
+[test — minor (A)] {Cm} :Cm|F|Bb|Gm:
+[test — major (A)] {G} :G|Bm|Em|Em:
+
+[aespa — Girls (V)] {D#m} :D#m|D#m|D#m|D#m:
+[aespa — Girls (E)] {D#m} :D#m//Em//|D#m//Dm//|D#m//Em//|A#:
+[aespa — Girls (P)] {D#m} :B//G#m//|D#m//F#//|B//Adim//|A#7:
+[aespa — Girls (C)] {D#m} :D#m///Em/|D#m///Dm/|D#m///Em/|D#m:
+[aespa — Girls (Po)] {D#m} :G#m///C#/|D#m|B///C#/|D#m:
+[aespa — Girls (B)] {D#m} :D#m|G#7|B|A#7:
+[aespa — Girls (D)] {D#m} :Fm|Fm|D#m|D#m:
+[aespa — Life's Too Short (AB)] {C} :C|Am|Em|F:
+[aespa — Life's Too Short (B)] {C} :Dm|C//G//|C|F|Dm|C//G//|F|Fm:
+[aespa — Next Level (I,V,C)] {F#m} :F#m//A/B/|F#m//A/B/:
+[aespa — Next Level (Po)] {F#m} :F#m//C#//|E//B//|D//A//|C#//F#m//:
+[aespa — Next Level (D)] {F#m} :F#m|F#m///G#m/|F#m|F#m:
+[aespa — Next Level (B)] {F#m} :Em|F#m|Gm|A:
+[aespa — Next Level (V)] {F#m} :Em|Em|C|C|Em|Em|C|C//D//:
+[aespa — Savage (V)] {F#m} :Em|Em|Em|Em|Em|Em|Em|Em|Am|Am|Am|Am|Am|Am|Am|Am:
+[aespa — Savage (P)] {F#m} :F#m|D|Bm|C#7:
+[aespa — Savage (C)] {F#m} :F#m|F#m|F#m|F#m:
+[aespa — Savage (B)] {F#m} :F#m|Bm|Em|A|F#m|Bm|Em|A|F#m|Bm|Em|A|F#m|Bm|Em|F#:
+[aespa — Savage (D)] {F#m} :Em|Em|Em|Em:
+[BLACKPINK — As If It's Your Last (V)] {G#} :G#|G#|G#|G#|G#|G#|G#|E//F#//:
+[BLACKPINK — As If It's Your Last (P,B)] {G#} :G#m|B|F#|E:
+[BLACKPINK — As If It's Your Last (C)] {G#} :E|B|F#|G#m//F#//:
+[BLACKPINK — Boombayah (I,V)] {Fm} :Fm|Fm|Fm|Fm//Eb//:
+[BLACKPINK — Boombayah (P)] {Fm} :Fm|Bb|Fm|Bb|Fm|Bb|Fm|Bb|Gm|Cm|Ab|G:
+[BLACKPINK — Boombayah (C)] {Fm} :F|F|F|F:
+[BLACKPINK — Boombayah (D)] {Fm} :Fm|Fm|Fm|Eb//Db//:
+[BLACKPINK — Don't Know What To Do (V,C)] {D} :D|D|F#m|F#m|D|D|E|E:
+[BLACKPINK — Don't Know What To Do (P)] {D} :Bm|E|A|F#m|Bm|E|A|F#m|Bm|E|A|F#m|Bm|Bm|E|E:
+[BLACKPINK — Don't Know What To Do (O)] {D} :D|A|C#m|F#m//E//|D|A|C#m:
+[BLACKPINK — Kick It (V)] {E} :E|E|C#m|C#m:
+[BLACKPINK — Kick It (P)] {E} :F#m//B//|C#m|F#m//B//|C#m:
+[BLACKPINK — Kick It (C)] {E} :E|C#m|E|C#m|A//B//|C#m|A//B//|C#m:
+[BLACKPINK — Kick It (B)] {E} :A//E//|C#m//B//|A//E//|C#m:
+[BLACKPINK — Kick It (D)] {E} :E|C#m|E|C#m:
+[BLACKPINK — Kick It (O)] {E} :A//B//|C#m|A//B//|C#m:
+[BLACKPINK — Lovesick Girls (I,C,Po)] {D#m} :D#m//C#//|F#//B//:
+[BLACKPINK — Lovesick Girls (V)] {D#m} :D#m|F#|B|B//C#//:
+[BLACKPINK — Lovesick Girls (P)] {D#m} :B//C#//|D#m//F#//:
+[BLACKPINK — Lovesick Girls (V)] {D#m} :D#m//C#//|F#//B//|D#m//C#//|F#//B//|D#m//C#//|F#//B//|D#m|D#m|:
+[BLACKPINK — Lovesick Girls (B)] {D#m} :B|C#|A#|D#m|B|C#|D#m|D#m:
+[BLACKPINK — Lovesick Girls (C)] {D#m} :B|B|D#m|A#m:
+[BLACKPINK — Lovesick Girls (O)] {D#m} :B|B|D#m|A#m|B|B|D#m|A#//C#//|B:
+[BLACKPINK — You Never Know (V)] {F} :F|A|Dm|Bb:
+[BLACKPINK — You Never Know (P)] {F} :Bb//C//|F/C/Dm//|Bb//C//|F//Cm6//|Bb//C//|F/C/Dm//|Bb//C//|Dm:
+[BLACKPINK — You Never Know (C)] {F} :F|A|Dm|Bb//Bbm//|Dm|A|Bb|C#6:
+[BLACKPINK — You Never Know (B)] {F} :F|A|Dm|Bb|Bb//C//|F/C/Dm//|Bb//C//|F//Cm6//|Bb//C//|F/C/Dm//|Bb//C//:
+[BTS — 00:00 (I,V,C)] {Ab} :Ab|Cm|Db|Dbm:
+[BTS — 00:00 (P)] {Ab} :Bbm//Eb//|C//Fm//|Db|Dbm:
+[BTS — 00:00 (B)] {Ab} :Fm|Eaug|Ab|Bb|Db//C//|Fm//Eb//|Bbm|Dbm:
+[BTS — Black Swan (I,Po,O)] {Dm} :Bbmaj7|Gm|Dm|C|Bbmaj7|Gm|Dm|Dm:
+[BTS — Black Swan (V,P,C)] {Dm} :Bbmaj7|Gm|Dm|C:
+[BTS — Boy In Luv (Po,V)] {Am} :Am|Am//C/Am/|Am|Am//C/Am/|Am|Am//C/Am/|Am|C//Dm//:
+[BTS — Boy In Luv (P)] {Am} :Am|Am|Bm|Bm|C|C|Dm|Em:
+[BTS — Boy In Luv (C)] {Am} :Am|Am|F|F|C|C|G|G//E7//:
+[BTS — Boy In Luv (B)] {Am} :F|F|Em|Em|Dm|Dm|Dm|Dm|F|F|Em|Em|Dm|Dm|Dm|Em:
+[BTS — Boy With Luv (A)] {G} :G|Bm|A|A//F#m//:
+[BTS — Butter (V)] {Ab} :Ab|Ab|Ab|Ab:
+[BTS — Butter (P,D)] {Ab} :Db|Eb//Fm//|Db|Eb//Bbm//:
+[BTS — Butter (C,O)] {Ab} :Db|Eb//Fm//|Db|Eb//Bbm//|Db|Eb//Fm//|Db|Eb///Ab/:
+[BTS — Butter (B)] {Ab} :Db|Eb//Fm//:
+[BTS — Butterfly (V,C)] {Gb} :Gb|Db|Fm|Bbm:
+[BTS — Butterfly (P)] {Gb} :Gb|Db|Fm|Bbm|Gb|Db|F|F|:
+[BTS — Butterfly (Po,B)] {Gb} :Gb|A|B|Db:
+[BTS — Butterfly (P)] {Gb} :Gb|Db|F|F|:
+[BTS — Epiphany (I,V,Po,O)] {Dm} :Bb|Dm|C|C:
+[BTS — Epiphany (C,D)] {Dm} :F|F|Dm|Dm|Bb|Bb|C|C:
+[BTS — Epiphany (B)] {Dm} :Dm|Am|Bb|C:
+[BTS — Let Go (I,P,B)] {E} :E|G#m|C#m|D//B//:
+[BTS — Let Go (V)] {E} :E|G#m|C#m|A:
+[BTS — Let Go (C,Po)] {E} :E|G#m|C#m|Am:
+[BTS — Lie (I,D,O)] {F#m} :F#m|C#7|F#m|C#7:
+[BTS — Lie (V)] {F#m} :F#m|F#m|F#m|F#m:
+[BTS — Lie (P)] {F#m} :F#m|G#m7b5|A//Bm//|C#:
+[BTS — Lie (C)] {F#m} :F#|F#|Bm|Bm|D|D|Dm|Dm|F#|F#|Bm|Bm|D|Dm|C#7|F#m:
+[BTS — Lie (B)] {F#m} :Bm|D|C#|F#m|Bm|D|C#|C#:
+[BTS — Love Maze (A)] {C#m} :C#m|Bm//E//|A|D#dim//G#|C#m//G#7//|Bm//E//|A|D#dim//G#:
+[BTS — MIC Drop (I,V,C)] {D#m} :D#m|D#m|D#m|D#m|A#m|A#m|A#m|A#m:
+[BTS — MIC Drop (P)] {D#m} :D#m//A#//|B|B|B//C#//:
+[BTS — MIC Drop (B)] {D#m} :D#m|A#m|B|G#m//A#:
+[BTS — MIC Drop (O)] {D#m} :D#m|A#m|B|G#m//A#|D#m|A#m|B|A#//C#//:
+[BTS — Permission to Dance (V,C,D)] {E} :E//B//|C#m//B//|A//G#m//|A//B//:
+[BTS — Permission to Dance (P,B)] {E} :C#m|G#7|A|B:
+[BTS — Permission to Dance (Po)] {E} :C#m|G#7|A|B|E//B//|C#m//B//|A//G#m//|F#m//B//:
+[BTS — Run (AB)] {D} :D|Bm|C#m|F#m:
+[BTS — Run (B)] {D} :Bm|Bm|E|E|C#m|C#m|F#sus4|F#|Bm|Bm|A|A|G|G|E|E:
+[BTS — Serendipity (AB)] {Db} :Db|Abmaj7|Db|Abmaj7:
+[BTS — Serendipity (B)] {Db} :Db|Cm|Fm|Ab:
+[BTS — Spring Day (I,V)] {Eb} :Eb|Gm|Cm|Ab:
+[BTS — Spring Day (P)] {Eb} :Eb|Gm|Ab|Abm|Fm|Gm|Ab|Abm:
+[BTS — Spring Day (C,Po,O)] {Eb} :Eb|Gm|Ab|Abm|Cm|Gm|Ab|Abm:
+[BTS — Spring Day (B)] {Eb} :Ab|Bb|Gm|Ab|Ab|Bb|Gm|Bb:
+[BTS — Stay Gold (A)] {Db} :Db|Db|F7|F7|Bbm|Bbm|Gb|Gb:
+[BTS — The Truth Untold (V)] {Dbm} :Dbm|Abm|A|A|E|Gbm|A|A|Dbm|Abm|A|A|E|Gbm|Dbm|Dbm:
+[BTS — The Truth Untold (P)] {Dbm} :A//Dbm//|Dbm|B|B:
+[BTS — The Truth Untold (C)] {Dbm} :E|Ab7|A|A|E|Ab7|A|A|E|Ab7|A|A//B//|Dbm|Ab7|A|A|:
+[BTS — The Truth Untold (Po,O)] {Dbm} :E|Ab7|A|A:
+[BTS — The Truth Untold (D)] {Dbm} :Dbm|Abm|A|A:
+[BTS — Yet To Come (I,V,P,O)] {Db} :Db//Gb//|Cdim//F7//|Bbm//Eb7//|Gb//Ab//:
+[BTS — Yet To Come (C,V)] {Db} :Db//Gb//|Cdim//F7//|Bbm//Eb7//|Ebm//Ab//:
+[ENHYPEN — Fever (A)] {F#m} :F#m///A/|A|D|D:
+[ENHYPEN — Future Perfect (AP)] {Am} :Am|Am|Am|Am:
+[ENHYPEN — Future Perfect (P)] {Am} :F|Dm|Am|G:
+[ENHYPEN — Given-Taken (I,V,P,Po,B)] {G#m} :G#m|D#m|E|C#m:
+[ENHYPEN — Given-Taken (C)] {G#m} :E|F#|G#m|D#m:
+[ENHYPEN — Let Me In (A)] {G#m} :G#m|D#m|E|E:
+[ENHYPEN — Polaroid Love (A)] {Cm} :Cm|F|Bb|Gm:
+[ENHYPEN — Upper Side Dreamin (I)] {Ab} :Ab|Fm|C|Bb:
+[ENHYPEN — Upper Side Dreamin (V)] {Ab} :Ab|Fm|Cm|Cm|Ab|Fm|C|C|:
+[ENHYPEN — Upper Side Dreamin (P)] {Ab} :F|Ab|C|C|F|Ab|G7|Cm:
+[ENHYPEN — Upper Side Dreamin (C,Po,B)] {Ab} :Ab|Fm|C|C:
+[EXO — Monster (I,V,P,D)] {Fm} :Fm|Fm|Fm|Fm:
+[EXO — Monster (C,O)] {Fm} :F///Bbm/|Bbm|Bbm///F/|F:
+[EXO — Monster (B)] {Fm} :Ddim|Ddim|Db|C|Bbm|C:
+[(G)I-DLE — Tomboy (I)] {G#m} :G#m|C#m|G#m|C#m:
+[(G)I-DLE — Tomboy (V)] {G#m} :G#m|C#m//D#m//|G#m|C#m//D#m//:
+[(G)I-DLE — Tomboy (P)] {G#m} :G#m|E|C#m|E//D#//|G#|E|C#m|G#:
+[(G)I-DLE — Tomboy (C)] {G#m} :G#m|C#m//D#m//|G#m|C#m//D#m//|G#m|C#m//D#m//|G#m//B//|C#m//D#m//|:
+[(G)I-DLE — Tomboy (V)] {G#m} :G#m//E//|D#m//C#m//|G#m//C#m//|D#m//G#m//:
+[(G)I-DLE — Tomboy (B,O)] {G#m} :G#m//C#m//|G#m//D#m//|G#m//C#m//|G#m//D#m//:
+[(G)I-DLE — Tomboy (E)] {G#m} :G#m|E|C#m|E//D#//:
+[ITZY — Dalla Dalla (I,V,P,Po)] {A} :A|A|A|A:
+[ITZY — Dalla Dalla (C)] {A} :F#m|B|E|A|F#m|B|F|G:
+[ITZY — Dalla Dalla (B)] {A} :Bm|D|A|A|Bm|D|A|E:
+[ITZY — Dalla Dalla (D,O)] {A} :F#m|F#m|F#m|F#m:
+[ITZY — Domino (I,V,C)] {E} :E|F#m|C#m|B:
+[ITZY — Domino (P,B)] {E} :F#m|G#m|A|B:
+[ITZY — In the morning (V,C,Po)] {F#m} :F#m|F#m|F#m|F#m:
+[ITZY — In the morning (P)] {F#m} :D|Bm|C#|F#m:
+[ITZY — In the morning (B)] {F#m} :F#m|Bm|D|E:
+[ITZY — LOCO (I)] {Fm} :Fm|Fm|Fm//Db/Ab/|Bbm//Db//:
+[ITZY — LOCO (V,Po)] {Fm} :Fm|Fm|Fm|Fm:
+[ITZY — LOCO (P)] {Fm} :Fm|Bbm//Db//|Fm//Ab//|Bbm//C//:
+[ITZY — LOCO (C,D)] {Fm} :Fm|Cm|Db|C:
+[ITZY — Sneakers (AP)] {G} :G|G|G|D//C//:
+[ITZY — Sneakers (P)] {G} :C//D//|G//Em//|C//D//|G//Em//|C//D//|D#dim//Em//|F|G:
+[ITZY — Sorry Not Sorry (I,V,C)] {Em} :Em|Em|Em|G//A//:
+[ITZY — Sorry Not Sorry (P)] {Em} :E|E|D|D|A|A|C|D:
+[ITZY — Sorry Not Sorry (B)] {Em} :E|E|C|C|E|E|C|C|E|E|C|C|Am|Am|C|C:
+[ITZY — Sorry Not Sorry (D)] {Em} :Em|Em|Em|Em:
+[ITZY — Wannabe (I)] {F#m} :F#m|D|Bm|Bm:
+[ITZY — Wannabe (V,D)] {F#m} :F#m|F#m|F#m|F#m:
+[ITZY — Wannabe (P)] {F#m} :D|C#|F#m|Em|A|D|C#|Bm:
+[ITZY — Wannabe (C)] {F#m} :D|A|E|F#m|D|A|E|E//C#//:
+[IVE — Eleven (I,E)] {E} :E|E:
+[IVE — Eleven (V)] {E} :E|E|C|B:
+[IVE — Eleven (P)] {E} :C//B//|E|C//B//|E:
+[IVE — Eleven (C)] {E} :E|E|C|Am|E|E|C|D:
+[IVE — Eleven (D)] {E} :E|E|D|A|E|E|C//B//|Em:
+[IVE — Eleven (B)] {E} :E|E|D|A:
+[IVE — Love Dive (V)] {C#m} :C#m|G#|C#m|G#|A|B|C#m|G:
+[IVE — Love Dive (P)] {C#m} :A|B|C#m|E|A|B|C#m|C#m//G#//:
+[IVE — Love Dive (C)] {C#m} :C#m|G#|C#m|G#:
+[IVE — Love Dive (Po)] {C#m} :A|B|C#m|E:
+[IVE — Love Dive (B)] {C#m} :C#m|C#m|C#m|C#m:
+[Jung Kook — Still With You (I,D,V,O)] {F#m} :F#m7//G#m7//|C#m7//C#7sus4/C#m7/|D#m7//G#m7//|C#m7:
+[Jung Kook — Still With You (P,C)] {F#m} :F#m7//G#m7//|C#m7//F#m7//|D#m7//G#m7//|C#m7|F#m7//G#m7//|C#m7//F#m7//|D#m7//G#m7//|F#m7:
+[Kep1er — MVSK (V)] {Bb} :Bb|Bb|F|F|Bb|Bb|F|F|Bb|Bb|Fsus4|F|Bb|Bb|Fsus4|F:
+[Kep1er — MVSK (P)] {Bb} :Db//C7//|Fm//Bb7//|Db//C7//|Fm:
+[Kep1er — MVSK (C)] {Bb} :Db|C7|Fm|Fm|Db|C7|Fm|Fm:
+[Kep1er — MVSK (Po,O)] {Bb} :F|F|Db|Db|Bbm|Bbm|Eb|Eb:
+[Kep1er — MVSK (V)] {Bb} :F|F|Bb|Bb:
+[Kep1er — MVSK (P)] {Bb} :Bbm//Eb//|Fm//Bb7//|Bbm//C7//|Fsus4//Fm//|Db//C7//|Fm//Bb7//|Db//C7//|Fm:
+[Kep1er — MVSK (B)] {Bb} :F|F|Bb|Bb|Db|Db|Eb|Eb:
+[Kep1er — Wa Da Da (I)] {Fm} :Fm|Eb|Cm|Fm:
+[Kep1er — Wa Da Da (V,C,Po)] {Fm} :F|F|F|F:
+[Kep1er — Wa Da Da (P)] {Fm} :Fm|Fm|Fm|Fm|Fm//Eb//|Ab//Bb//|Csus4|C7:
+[Kep1er — Wa Da Da (V)] {Fm} :F|Bbm|F|F:
+[Kep1er — Wa Da Da (B)] {Fm} :F|F|Bb|C:
+[LE SSERAFIM — Blue Flame (A)] {E} :E|Cmaj7|Am7|Am7//D/B7/:
+[LE SSERAFIM — Sour Grapes (A)] {F#m} :F#m7|B7|G#m7|C#sus4//C#7//:
+[LOONA — Paint The Town (I)] {Ebm} :Eb|Eb|Eb|Eb:
+[LOONA — Paint The Town (V)] {Ebm} :Eb|Eb|Eb|Eb|Eb|Eb|Eb|Eb|Ebm|Abm|B|Bb|Ebm|Abm|B|Bb:
+[LOONA — Paint The Town (P)] {Ebm} :Ebm|Ebm|Ebm|Ebm|Ebm//Ddim//|Db//Cdim//|B|Bb:
+[LOONA — Paint The Town (C)] {Ebm} :Ebm|Ebm|Ebm|B//Gb//:
+[LOONA — Paint The Town (Po,C)] {Ebm} :Ebm|Abm|B|Bb:
+[LOONA — Paint The Town (V)] {Ebm} :Ebm|Ebm|Ebm|Ebm|Ebm|Ebm|Ebm|Ebm|Ebm|Abm|B|Bb|Ebm|Abm|B|Bb:
+[LOONA — Paint The Town (B)] {Ebm} :Ebm|Bb|B|Abm|Gm|Abm|B|Bb:
+[LOONA — Paint The Town (D)] {Ebm} :Ebm|Ebm|Ebm|Ebm:
+[Nayeon — Pop! (I,V,P,Po,B)] {D} :D|D|D|D:
+[Nayeon — Pop! (C)] {D} :A#|C|D|D:
+[Nayeon (ft. Felix) — No Problem (V,P,B)] {G#m} :G#m|C|D#m//F#//|B:
+[Nayeon (ft. Felix) — No Problem (C)] {G#m} :G#m|C|D#m//F#//|B|G#m|C|D#m//F#//|B|G#m|C|D#m//F#//|B|G#m|C|B|D#m//C#//:
+[NCT Dream — Chewing Gum (I)] {Db} :Db//Gb//|Db//Gb//|Db//Gb//|Ab:
+[NCT Dream — Chewing Gum (V,Po,B)] {Db} :Db|Db|Db|Db:
+[NCT Dream — Chewing Gum (P)] {Db} :Db|Db|Db|Db|Db|Db|Ab|Ab:
+[NCT Dream — Chewing Gum (C)] {Db} :Db//Gb//|Db//Gb//|Db//Gb//|A//B//:
+[NCT Dream — Dive Into You (I,V)] {E} :E|F#7|A|A:
+[NCT Dream — Dive Into You (P,Po)] {E} :E|F#7|A|A|E|F#7|A|D:
+[NCT Dream — Dive Into You (C))] {E} :E|F#7|A|A|E|F#7|A|D:
+[NCT Dream — Dive Into You (P)] {E} :F#|F#//G#m//|A|E|F#|F#//G#m//|A|D:
+[NCT Dream — Dive Into You (B)] {E} :E|F#7|A|A|E|F#7|A|A|E|F#|C|C|E|F#7|D|D:
+[NCT Dream — Glitch Mode (C)] {Bb} :Bb|Bb|Bb|Bb|Gb|Gb|Bb|Bb:
+[NCT Dream — Glitch Mode (V)] {Bb} :Bb|Bb|Bb|Bb:
+[NCT Dream — Glitch Mode (P)] {Bb} :Eb|G|Eb|G|Eb//F//|Bb|Eb//F//|Bb:
+[NCT Dream — Glitch Mode (C)] {Bb} :Bb|Bb|Bb|Bb|Gb|Ebm|Bb|Bb:
+[NCT Dream — Glitch Mode (B)] {Bb} :Eb|G|Eb|G|Fm//Bb//|Eb//Cm//|Db|C:
+[NCT Dream — Glitch Mode (D)] {Bb} :Bb/Ab/Gb/F/|Bb/Ab/Gb/F/|Bb/Ab/Gb/Eb/|Bb|Bb//Ab/Eb/|Db/Bb/Ab/Eb/|Bb//Ab/Eb/|Fm:
+[NCT Dream — Hello Future (I,Po)] {Db} :Db|Db|Db|Db:
+[NCT Dream — Hello Future (V)] {Db} :Db|Db|Db|Db|Db//B//|Bbm//Gbm|Db//B//|Bbm//Gbm:
+[NCT Dream — Hello Future (P)] {Db} :Db//B//|Bbm//Gbm|Db|Db:
+[NCT Dream — Hello Future (C,B,O)] {Db} :Db|Gb//Gbm|Db|Gb//Gbm:
+[NCT 127 — Kick It (I,C,E,D)] {F#m} :F#m|F#m|F#m|F#m:
+[NCT 127 — Kick It (V)] {F#m} :D|G|F#m|Em|A|D|C#7|F#m:
+[NCT 127 — Kick It (P)] {F#m} :G|G|F#m|F#m:
+[NCT 127 — Kick It (B)] {F#m} :D|C#7|F#m|E|D|G|F#m|Em//A//|D|C#7|F#m|E|Bm|G#m|C#7|F#m:
+[NMIXX — O.O (I)] {Em} :E|F|E|F:
+[NMIXX — O.O (V)] {Em} :Em|Em|Em|Em:
+[NMIXX — O.O (P)] {Em} :C|B7|Em|Dm|C|B7|Em|Em:
+[NMIXX — O.O (C,O)] {Em} :Em|Em|Em|Em|Em|D|C|B7:
+[NMIXX — O.O (E)] {Em} :A|A|A|A:
+[NMIXX — O.O (V)] {Em} :A|G|D|F:
+[NMIXX — O.O (B)] {Em} :A|D|Bm|D:
+[Red Velvet — Feel My Rhythm (I)] {Db} :Db|Ab|Bbm|Ab|Gb|Eb7|Ab|Gb|Fm|Bb7|Ebm|Cdim|Db|Bbm//Eb//|Ab|Ab:
+[Red Velvet — Feel My Rhythm (V)] {Db} :Db|Db|Db|Db|Db|Db|Gb|Gb:
+[Red Velvet — Feel My Rhythm (P)] {Db} :Db|Cdim//F7//|Bbm|Abm//Db//|Gb|Eb7|Ab|Ab:
+[Red Velvet — Feel My Rhythm (C)] {Db} :Db|Cdim//F7//|Bbm|Ab//Db//|Gb|Eb7|Ab|Gb|Fm|Bb7|Ebm|Gbm|Db|Bbm//Eb//|Ab|Ab:
+[Red Velvet — Feel My Rhythm (V)] {Db} :Db|Db|Db|Db|Db|Db|Gb|Gb|Db|Db//D//|Db|Db//D//|Db|Db|Gbm|Gbm:
+[Red Velvet — Feel My Rhythm (B)] {Db} :Ab|Gb|Fm|Ebm|Bb7|Ddim|Ebm|Db|F7|F7|Bbm|Bbm|Bbm//Gb//|F7|F7|Bbm:
+[Red Velvet — Feel My Rhythm (D)] {Db} :Db|Cdim//F7//|Bbm|Cdim|Ab:
+[Red Velvet — Feel My Rhythm (C)] {Db} :Eb|Ddim//G7//|Cm|Bb//Eb//|Ab|F7|Bb|Ab|Gm|C7|Fm|Abm|Eb|Cm//F//|Bb|Bb:
+[Red Velvet — Rainbow Halo (I,P,Po,O)] {F} :Db|Eb|F|F:
+[Red Velvet — Rainbow Halo (V)] {F} :F|F|F|F|Db|Db|Db|Db|F|F|F|F|Db|Db|Db|Bbm//C//:
+[Red Velvet — Rainbow Halo (C)] {F} :F|F|F|F|Db|Eb|F|F:
+[Red Velvet — Rainbow Halo (B)] {F} :Db|Cm|F|F:
+[Red Velvet — Russian Roulette (I,V,C,Po,O)] {Cm} :Cm|F7|Bb|Eb//G7//:
+[Red Velvet — Russian Roulette (P)] {Cm} :Fm|Gm|Abm|Bb|Fm|Gm|Bb|Bb:
+[Red Velvet — Russian Roulette (B)] {Cm} :Fm|Gm|Abm|Db|Fm|Gm|Ab|Ab:
+[STAYC — ASAP (I,C)] {Dm} :Dm7|Fsus4|Bbmaj7|Asus4/A///:
+[STAYC — ASAP (V)] {Dm} :F|F///Gb/|F|F///Gb/|F|F///Gb/|Cm|Bb:
+[STAYC — ASAP (P)] {Dm} :F|F///Gb/|F|F///Gb/|F|F///Gb/|Bb|A7:
+[STAYC — ASAP (Po)] {Dm} :Dm7|Fsus4|Bbmaj7|Db//Eb//:
+[STAYC — ASAP (B)] {Dm} :F|Bbm|F|Bbm|F|Bbm|Gm|Bbm:
+[STAYC — Beautiful Monster (I)] {Gb} :B|B/Abm//Gb/|Gb|Gb|Ebm|Ebm/Gb//Bbm/|Bbm|Bbm:
+[STAYC — Beautiful Monster (V,C,B)] {Gb} :B|B/Abm//Gb/|Gb|Gb|Ebm|Ebm|Bbm|Bbm:
+[STAYC — Beautiful Monster (P)] {Gb} :B|B/Abm//Gb/|Gb|Gb|Ebm|Ebm|Bbm|Bbm|Abm|Abm|Bm|Bm:
+[STAYC — RUN2U (I)] {Em} :E|E|E|E|C|D|E|E:
+[STAYC — RUN2U (V)] {Em} :E|E|E|E|C|D|E|E|E|E|E|E|C|D|B7|B7:
+[STAYC — RUN2U (P)] {Em} :Em|F#m|G|G:
+[STAYC — RUN2U (C,D)] {Em} :Em|Em|A|A|Bsus4|Bsus4|B7|B7:
+[STAYC — RUN2U (V,B)] {Em} :Em|Em|Em|Em|C|D|B7|B7:
+[STAYC — So Bad (I,V)] {Gm} :Gm|Gm|C|C|Eb|F|Gm|Gm:
+[STAYC — So Bad (P)] {Gm} :Eb//F/Eb/|Eb|Eb//F/Gm/|Gm|Gm//F/Eb/|Eb|F|F:
+[STAYC — So Bad (C)] {Gm} :Eb|Eb|Bb|Bb|Dm|Dm|Gm|Gm:
+[STAYC — So Bad (Po)] {Gm} :Cm|Cm|D7|D7:
+[STAYC — So Bad (B)] {Gm} :Eb|Eb|Bb|Bb|Cm|Cm|Gm|F|Eb|Eb|C|C|F|F|D|D:
+[Stray Kids — All In (I,V)] {Am} :Am|Am|Am|Am:
+[Stray Kids — All In (V)] {Am} :Am//C//|F//G//|Am//C//|F//Em//:
+[Stray Kids — All In (P)] {Am} :Dm|G|Am|G|Dm|G|Am|C:
+[Stray Kids — All In (C,B)] {Am} :F|E|Am|G//C//:
+[Stray Kids — All In (V)] {Am} :Am//C//|F//G//|Am//C//|F//Em//|Am|C|Dm|F//Em//:
+[Stray Kids — Any (I)] {Bbm} :Bbm|Bbm|Gb//Ebm//|Ebm:
+[Stray Kids — Any (V,C)] {Bbm} :Bbm|Bbm|Ebm|Ebm:
+[Stray Kids — Any (P)] {Bbm} :Gb|Ab|Bbm|Bbm//Fm//|Gb|Ab|F|F:
+[Stray Kids — Any (E)] {Bbm} :Bbm|Bbm|Gb|Gb:
+[Stray Kids — Any (B)] {Bbm} :Bbm|Bbm|Gb|Gb|Gb|Ab|Bbm|Bbm:
+[Stray Kids — Chronosaurus (I,V,P,B)] {Dm} :Dm|Dm|A|A:
+[Stray Kids — Chronosaurus (C,Po)] {Dm} :Dm|Dm|Gm|A:
+[Stray Kids — God's Menu (AP)] {Fm} :Fm|Fm|Fm|Fm:
+[Stray Kids — God's Menu (P)] {Fm} :Fm///Db/|Db|Ab///Eb/|Eb|Fm///Db/|Db|Ab///Eb/|Eb|Db|C|F|Bb|Db|Db|C|C:
+[Stray Kids — Hoodie Season (V)] {F#} :F#|B|E|A:
+[Stray Kids — Hoodie Season (P,V,B)] {F#} :F#|D#m|B|Bm:
+[Stray Kids — Hoodie Season (C,D)] {F#} :B|F#|B|F#:
+[Stray Kids — Hoodie Season (V)] {F#} :F#|D#m|G#m|A//B//|F#|D#m|F#|D#m:
+[Stray Kids — I am YOU (V,P)] {E} :E|F#|G#m|B:
+[Stray Kids — I am YOU (C,B,O)] {E} :E|F#|D#m|G#m:
+[Stray Kids — Levanter (I,V,B)] {D} :D|A|E///Fdim/|F#m//E//:
+[Stray Kids — Levanter (P)] {D} :D//Bm//|C#m//F#m//|D//Bm//|C#|:
+[Stray Kids — Levanter (C,D)] {D} :D|A|C#|F#m//E//:
+[Stray Kids — Maniac (I,P)] {G#m} :G#m|G#m|G#m|G#m:
+[Stray Kids — Maniac (V)] {G#m} :G#m|E|B|F#:
+[Stray Kids — Maniac (C,D)] {G#m} :G#|F#//A//|G#|F#//A//:
+[Stray Kids — Maniac (B)] {G#m} :E|E|D#7|D#7|G#m|G#m|F#m|B|E|E|D#7|D#7|G#m|G#m|G#|G#:
+[Stray Kids — Slump (A)] {Em} :Em|C|G|D:
+[Stray Kids — Waiting For Us (I,V,E,B)] {Eb} :Eb|Fm|Ab|Ab:
+[Stray Kids — Waiting For Us (C,Po)] {Eb} :Eb|Fm|Ab|Ab|Eb|Fm|Ab|Ab|Cm|Cm|Bb|Bb|Ab|Ab|Abm|Abm:
+[Treasure — Beautiful (I)] {C} :C|G|Am//G//|F:
+[Treasure — Beautiful (V,C,B)] {C} :C|F|Am//G//|F:
+[Treasure — Beautiful (P)] {C} :Em//F//|G//Am//|Em//F//|G:
+[Treasure — Darari (I,V,C,O)] {Dm} :Dm7|G|Cmaj7|C7:
+[Treasure — Darari (P)] {Dm} :Dm7|G|Em7|Am7|Dm7|G|Cmaj7|C7:
+[Treasure — Darari (B)] {Dm} :Dm7|Dm7|G|G|Cmaj7|Cmaj7|C7|C7|Dm7|G|Cmaj7|C7|Dm7|G:
+[TWICE — Alcohol-Free (I,V,C)] {Bbm} :Bbm|Eb|Ab|Fm:
+[TWICE — Alcohol-Free (P)] {Bbm} :Ebm//Ab//|Db|Gm//C//|Fm|Ebm//Ab//|Db/Cm/Bbm//|Gb|Eb:
+[TWICE — Alcohol-Free (B)] {Bbm} :Bbm|Eb|Ab|Fm|Bbm//Eb//|Ab//Fm//|Bbm//Eb//|Ab//Fm//:
+[TWICE — Cry For Me (I,V,P)] {Cm} :Cm|F|Bb|D:
+[TWICE — Cry For Me (C,D)] {Cm} :Gm//Cm//|F//Bb//|Eb//Cm//|D|Gm//Cm//|F//Bb//|Eb//Cm//|D|Gm:
+[TWICE — Cry For Me (B)] {Cm} :Eb//F//|Gm|Eb//Cm//|D:
+[TWICE — Doughnut (I)] {Bbm} :Bbm//Eb//|Ab//F7//|Db|Bbm//Eb//|Fsus4|F:
+[TWICE — Doughnut (V)] {Bbm} :Db|Cm//Fm//|Gb|Fsus4//Eb//|Db|Cm//F7//|Gb/Fm/Ebm//|Abm//Db//|Gb///Fm/|Ebm|F7:
+[TWICE — Doughnut (C)] {Bbm} :Bbm//Eb//|Ab//F7//|Bbm//C7//|Fsus4|F|Bbm//Eb//|Ab//F7//|Db|Bbm//Eb//|Fsus4|F:
+[TWICE — Doughnut (B)] {Bbm} :Db//Eb//|Fm|Db//Eb//|Fm//Ebm/Ab/|Bbm|Adim|Ab|Gm7b5|Gb|Gb|Fsus4|F:
+[TWICE — Doughnut (C)] {Bbm} :Bbm//Eb//|Ab//F7//|Bbm//C7//|Fsus4|F|Bbm//Eb//|Ab//F7//|Db|Bbm//D:
+[TWICE — Doughnut (Po)] {Bbm} :Bm//E//|A//Gb7//|Bm//Db7//|Gbsus4|Gb|Bm//E//|A//Gb7//|D|Bm//E:
+[TWICE — Doughnut (O)] {Bbm} :Bb|Db//Ab//|Bb|Db//Ab//:
+[TWICE — Fancy (I,V)] {Cm} :Cm//Bb//|Eb//Fm//|Cm//Bb//|Eb//Fm//|Cm//Bb//|Eb//Fm//|Ab|Bb:
+[TWICE — Fancy (P)] {Cm} :Eb|Eb7|Ab|Bb:
+[TWICE — Fancy (C,Po)] {Cm} :Ab|Bb|Eb|Cm|Fm|Bb|Eb|Cm:
+[TWICE — Fancy (B)] {Cm} :Ab|Fm|Ab|Cm:
+[TWICE — Fancy (O)] {Cm} :Cm//Bb//|Eb//Fm//:
+[TWICE — I Can't Stop Me (I,O)] {Bbm} :Bbm|Ab|Ebm|Gb:
+[TWICE — I Can't Stop Me (V,P,C,Po,B)] {Bbm} :Bbm|Ab|Ebm|Gb//Ab//:
+[TWICE — Like OOH-AHH (I,O)] {F#} :F#|F#|Bm|Bm:
+[TWICE — Like OOH-AHH (V)] {F#} :F#|F#|Bm|Bm|F#|F#|Bm|Bm|F#|F#|Cm|Cm|F#|F#|Bm|Bm:
+[TWICE — Like OOH-AHH (P)] {F#} :G#m|A#m|Bm|Bm|G#m|A#m|Bm|C#:
+[TWICE — Like OOH-AHH (C)] {F#} :F#|F#|Bm|Bm|G#m|G#m|C#|C#|F#|F#|Bm|Bm|D#m|D#m|B|B:
+[TWICE — Like OOH-AHH (V)] {F#} :F#|F#|F#|F#|F#|F#|F#|F#|F#|F#|Bm|Bm|F#|F#|Bm|Bm:
+[TWICE — Like OOH-AHH (B)] {F#} :F#|Bm|G#m|A#m:
+[TWICE — Like OOH-AHH (D)] {F#} :F#|F#|F#|F#:
+[TWICE — Moonlight (AP)] {Cm} :Cm7|D#7|A#m7|Fm7:
+[TWICE — Moonlight (P)] {Cm} :Dm7b5|Gm7|G#|Fm7|Dm7b5|Gm7|G#|A#sus4:
+[TWICE — More & More (V)] {Bb} :Bbmaj7|C|Am|Bbmaj7:
+[TWICE — More & More (P,C)] {Bb} :Bbmaj7|C|Am|Dm//C//:
+[TWICE — More & More (D)] {Bb} :Dm|Dm|Dm|Dm:
+[TWICE — More & More (B)] {Bb} :Dm|F|Gm|Gm:
+[TWICE — Scientist (V,Po,D,O)] {Gb} :Gb|Gb|Gb|Gb:
+[TWICE — Scientist (P,B)] {Gb} :Gb|E|B|Bm:
+[TWICE — Scientist (C)] {Gb} :Gb|E|B|Bm|Gb|E|B|B:
+[TWICE — The Feels (I,V,C,Po)] {Bm} :Bm|E|A|D//F#//:
+[TWICE — The Feels (P,B)] {Bm} :Em|Bm|A//F#7//|Bm//Am/D/|Em|Bm|G#m7b5|A:
+[TWICE — What is Love? (I,V,C,O)] {Ab} :Ab|Cm|Fm|Dbm:
+[TWICE — What is Love? (P)] {Ab} :Fm//Eb//|Ab|Db|Dbm//Eb//:
+[TWICE — What is Love? (B)] {Ab} :Ab|Cm|Fm|Db:
+[TXT — Anti-Romantic (AP)] {Eb} :Eb|Cm|Ab|Bb:
+[TXT — Anti-Romantic (P)] {Eb} :Ab//Bb//|Cm//Eb//|Ab//Bb//:
+[TXT — Good Boy Gone Bad (V,C,Po,O)] {C#m} :C#m|C#m|C#m|G#:
+[TXT — Good Boy Gone Bad (P,B)] {C#m} :C#m|D#dim|E|G#:
+[TXT — Ito (I,D)] {Bb} :Bb//Cm//|Gm//Eb//:
+[TXT — Ito (V)] {Bb} :Bb//Ebm//|Bb//Gm//|C7//Eb//|F:
+[TXT — Ito (P)] {Bb} :Dm//Eb//|F//D//|Gm//C7//|Eb/F/Bb//:
+[TXT — Ito (C)] {Bb} :Gm//Eb//|F//Bb//|Gm//Eb//|F//Bb//|Dm//Eb//|F/D7/Gm//|Dm//Eb//|F:
+[TXT — Ito (B)] {Bb} :Gb|Db|Gb|F7:
+[TXT — Ito (D)] {Bb} :Bb//F//|Ab//G7//|Gb//F//|C7//F//:
+[TXT — Ito (C)] {Bb} :Abm//E//|Gb//B//|Abm//E//|Gb//B//|Ebm//E//|Gb/Eb7/Abm//|Ebm//E//|Gb:
+[TXT — Ito (O)] {Bb} :B//Dbm//|Abm//E//:
+[TXT — LO$ER=LO♡ER (A)] {G} :G|Bm|Em|Em:
+[TXT — Magic (V,C,Po)] {Db} :Db|Eb|Ab|Cm:
+[TXT — Magic (P)] {Db} :Db|Eb|Ab|Fm:
+[TXT — Magic (P)] {Db} :Db|Eb|Fm|Ab:
+[TXT — Magic (B)] {Db} :Db|Eb|Ab|Cm|Db|Eb|Fm|Eb:
+[TXT — Thursday's Child Has Far To Go (I,P,Po,B)] {E} :E|F#|G#m|B//D#m//:
+[TXT — Thursday's Child Has Far To Go (D,C)] {E} :E|F#|G#m|B:
+[TXT — Thursday's Child Has Far To Go (V)] {E} :E|E|E|E|G#m|G#m|G#m|G#m:
+[TXT — Trust Fund Baby (I)] {F} :F|Dm:
+[TXT — Trust Fund Baby (V)] {F} :F|Bb|Dm//C//|Bb:
+[TXT — Trust Fund Baby (P)] {F} :Dm|C|Bb|Bb//Bbm//:
+[TXT — Trust Fund Baby (C)] {F} :F//C//|Bb|F//C//|Bb|Dm//C//|Bb|F//C//|Bb//Bbm//:
+[TXT — Trust Fund Baby (Po)] {F} :F///C/|Bb|F///C/|Bb:
+[TXT — Trust Fund Baby (O)] {F} :F//C//|Bb//Bbm//:
+[TXT — Way Home (I,V,Po,O)] {Gb} :Gb|F7|Bbm|Db:
+[TXT — Way Home (C,B)] {Gb} :Gb///F7/|F7|Bbm///Db/|Db:
+[TXT — 9 And Three Quarters (AB)] {D#m} :D#m|B|F#m|C#:
+[TXT — 9 And Three Quarters (B)] {D#m} :D#m|C#m|B|F#//C#//:
+[TXT (ft. iann dior) — Valley of Lies (A)] {D} :D|Dmaj7|Gmaj7|Gm|F#m|Bm|Em|Em:
+[WayV — Love Talk (C)] {F#m} :F#m|Bm|E|A|D|G#m7b5|C#7|F#m:
+[WayV — Love Talk (V)] {F#m} :F#m|Bm|C#|F#m|F#m|Bm|C#|A|F#m|Bm|C#|F#m:
+[WayV — Love Talk (P)] {F#m} :D|Bm//E//|C#m|C#7:
+[WayV — Love Talk (V)] {F#m} :F#m|Bm|E|E|F#m|Bm|C#|F#m:
+[WayV — Love Talk (Po)] {F#m} :F#m|Bm|E|A|D|Bm|C#7|C#7:
+[WayV — Love Talk (B)] {F#m} :D|Bm|E|A|D|G#m7b5|C#7|C#7:
+[WayV — Love Talk (D)] {F#m} :F#m|F#m|F#m|F#m:
