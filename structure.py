@@ -14,7 +14,7 @@ def structure_song():  # randomise song structure
     if start_with == "Chorus":  # if song starts with chorus increase chance of pre-chorus
         has_prechorus = random.random() * 100 < 95  # return True if random number is smaller than 95
     else:
-        has_prechorus = random.random() * 100 < 75  # return True if random number is smaller than 75
+        has_prechorus = random.random() * 100 < 85  # return True if random number is smaller than 75
     if has_prechorus:
         structure.append("Pre-chorus")
     structure.append("Chorus")

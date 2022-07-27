@@ -189,27 +189,37 @@ def main():
 
     print(f"{song_name} by {artist} (Key: {tonic} {tonality})\n")
     s = structure_song()
+    playlist = []  # list of midi files to play to create song
 
     for i in s:
         match i:
             case "Intro":
                 print("Intro       :" + "|".join(intro) + ":")
+                playlist.append("chord_midi/0 - intro.mid")
             case "Verse":
                 print("Verse       :" + "|".join(verse) + ":")
+                playlist.append("chord_midi/1 - verse.mid")
             case "Pre-chorus":
                 print("Pre-chorus  :" + "|".join(prechorus) + ":")
+                playlist.append("chord_midi/2 - prechorus.mid")
             case "Chorus":
                 print("Chorus      :" + "|".join(chorus) + ":")
+                playlist.append("chord_midi/3 - chorus.mid")
             case "Post-chorus":
                 print("Post-chorus :" + "|".join(postchorus) + ":")
+                playlist.append("chord_midi/4 - postchorus.mid")
             case "Bridge":
                 print("Bridge      :" + "|".join(bridge) + ":")
+                playlist.append("chord_midi/5 - bridge.mid")
             case "Interlude":
                 print("Interlude   :" + "|".join(interlude) + ":")
+                playlist.append("chord_midi/6 - interlude.mid")
             case "Outro":
                 print("Outro       :" + "|".join(outro) + ":")
+                playlist.append("chord_midi/7 - outro.mid")
 
-    play_midi("chord_midi/3 - chorus.mid")
+    for p in playlist:
+        play_midi(p)
 
 
 if __name__ == '__main__':
