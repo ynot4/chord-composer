@@ -4,3 +4,4 @@ chance of chord progressions being used for multiple sections
 
 different chord midi patterns
 chords can switch at different intervals
+possibility of inserting random progression anywhere in song

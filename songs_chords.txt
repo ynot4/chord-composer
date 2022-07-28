@@ -243,7 +243,7 @@
 [Red Velvet — Feel My Rhythm (V)] {Db} :Db|Db|Db|Db|Db|Db|Gb|Gb|Db|Db//D//|Db|Db//D//|Db|Db|Gbm|Gbm:
 [Red Velvet — Feel My Rhythm (B)] {Db} :Ab|Gb|Fm|Ebm|Bb7|Ddim|Ebm|Db|F7|F7|Bbm|Bbm|Bbm//Gb//|F7|F7|Bbm:
 [Red Velvet — Feel My Rhythm (D)] {Db} :Db|Cdim//F7//|Bbm|Cdim|Ab:
-[Red Velvet — Feel My Rhythm (C)] {Db} :Eb|Ddim//G7//|Cm|Bb//Eb//|Ab|F7|Bb|Ab|Gm|C7|Fm|Abm|Eb|Cm//F//|Bb|Bb:
+# [Red Velvet — Feel My Rhythm (C)] {Db} :Eb|Ddim//G7//|Cm|Bb//Eb//|Ab|F7|Bb|Ab|Gm|C7|Fm|Abm|Eb|Cm//F//|Bb|Bb:
 [Red Velvet — Rainbow Halo (I,P,Po,O)] {F} :Db|Eb|F|F:
 [Red Velvet — Rainbow Halo (V)] {F} :F|F|F|F|Db|Db|Db|Db|F|F|F|F|Db|Db|Db|Bbm//C//:
 [Red Velvet — Rainbow Halo (C)] {F} :F|F|F|F|Db|Eb|F|F:
@@ -316,7 +316,7 @@
 [TWICE — Doughnut (C)] {Bbm} :Bbm//Eb//|Ab//F7//|Bbm//C7//|Fsus4|F|Bbm//Eb//|Ab//F7//|Db|Bbm//Eb//|Fsus4|F:
 [TWICE — Doughnut (B)] {Bbm} :Db//Eb//|Fm|Db//Eb//|Fm//Ebm/Ab/|Bbm|Adim|Ab|Gm7b5|Gb|Gb|Fsus4|F:
 [TWICE — Doughnut (C)] {Bbm} :Bbm//Eb//|Ab//F7//|Bbm//C7//|Fsus4|F|Bbm//Eb//|Ab//F7//|Db|Bbm//D:
-[TWICE — Doughnut (Po)] {Bbm} :Bm//E//|A//Gb7//|Bm//Db7//|Gbsus4|Gb|Bm//E//|A//Gb7//|D|Bm//E:
+# [TWICE — Doughnut (Po)] {Bbm} :Bm//E//|A//Gb7//|Bm//Db7//|Gbsus4|Gb|Bm//E//|A//Gb7//|D|Bm//E:
 [TWICE — Doughnut (O)] {Bbm} :Bb|Db//Ab//|Bb|Db//Ab//:
 [TWICE — Fancy (I,V)] {Cm} :Cm//Bb//|Eb//Fm//|Cm//Bb//|Eb//Fm//|Cm//Bb//|Eb//Fm//|Ab|Bb:
 [TWICE — Fancy (P)] {Cm} :Eb|Eb7|Ab|Bb:
@@ -356,8 +356,8 @@
 [TXT — Ito (C)] {Bb} :Gm//Eb//|F//Bb//|Gm//Eb//|F//Bb//|Dm//Eb//|F/D7/Gm//|Dm//Eb//|F:
 [TXT — Ito (B)] {Bb} :Gb|Db|Gb|F7:
 [TXT — Ito (D)] {Bb} :Bb//F//|Ab//G7//|Gb//F//|C7//F//:
-[TXT — Ito (C)] {Bb} :Abm//E//|Gb//B//|Abm//E//|Gb//B//|Ebm//E//|Gb/Eb7/Abm//|Ebm//E//|Gb:
-[TXT — Ito (O)] {Bb} :B//Dbm//|Abm//E//:
+# [TXT — Ito (C)] {Bb} :Abm//E//|Gb//B//|Abm//E//|Gb//B//|Ebm//E//|Gb/Eb7/Abm//|Ebm//E//|Gb:
+# [TXT — Ito (O)] {Bb} :B//Dbm//|Abm//E//:
 [TXT — LO$ER=LO♡ER (A)] {G} :G|Bm|Em|Em:
 [TXT — Magic (V,C,Po)] {Db} :Db|Eb|Ab|Cm:
 [TXT — Magic (P)] {Db} :Db|Eb|Ab|Fm:

@@ -44,24 +44,25 @@ def get_chords_from_file(file_path):
 
 
 def separate_sections(section):
-    if section == "intro":
-        tuple_values = ("I", "A", "AB", "AP")
-    elif section == "verse":
-        tuple_values = ("V", "A", "AB", "AP")
-    elif section == "prechorus":
-        tuple_values = ("P", "A", "AB")
-    elif section == "chorus":
-        tuple_values = ("C", "A", "AB", "AP")
-    elif section == "postchorus":
-        tuple_values = ("Po", "A", "AB", "AP")
-    elif section == "bridge":
-        tuple_values = ("B", "A", "AP")
-    elif section == "interlude":
-        tuple_values = ("D", "A", "AP", "AB")
-    elif section == "outro":
-        tuple_values = ("O", "A", "AP", "AB")
-    else:
-        tuple_values = ("E", "A", "AP", "AB")
+    match section:
+        case "intro":
+            tuple_values = ("I", "A", "AB", "AP")
+        case "verse":
+            tuple_values = ("V", "A", "AB", "AP")
+        case "prechorus":
+            tuple_values = ("P", "A", "AB")
+        case "chorus":
+            tuple_values = ("C", "A", "AB", "AP")
+        case "postchorus":
+            tuple_values = ("Po", "A", "AB", "AP")
+        case "bridge":
+            tuple_values = ("B", "A", "AP")
+        case "interlude":
+            tuple_values = ("D", "A", "AP", "AB")
+        case "outro":
+            tuple_values = ("O", "A", "AP", "AB")
+        case other:
+            tuple_values = ("E", "A", "AP", "AB")
     return tuple_values
 
 
