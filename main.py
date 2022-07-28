@@ -177,7 +177,19 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
     for i in transposed_chords:
         composition.append(i.chord)
 
-    return composition
+    string = ""
+    for j in range(len(composition)):
+        if not string:
+            string += composition[j]
+        else:
+            string += ("|" + composition[j])
+        if lengths_of_chords[j] == 4:
+            string += "////"
+            # string += "|"
+        elif lengths_of_chords[j] == 2:
+            string += "//"
+
+    return string
 
 
 def main():
@@ -216,28 +228,28 @@ def main():
     for i in s:
         match i:
             case "Intro":
-                print("Intro       :" + "|".join(intro) + ":")
+                print("Intro       :" + intro + ":")
                 playlist.append("chord_midi/0 - intro.mid")
             case "Verse":
-                print("Verse       :" + "|".join(verse) + ":")
+                print("Verse       :" + verse + ":")
                 playlist.append("chord_midi/1 - verse.mid")
             case "Pre-chorus":
-                print("Pre-chorus  :" + "|".join(prechorus) + ":")
+                print("Pre-chorus  :" + prechorus + ":")
                 playlist.append("chord_midi/2 - prechorus.mid")
             case "Chorus":
-                print("Chorus      :" + "|".join(chorus) + ":")
+                print("Chorus      :" + chorus + ":")
                 playlist.append("chord_midi/3 - chorus.mid")
             case "Post-chorus":
-                print("Post-chorus :" + "|".join(postchorus) + ":")
+                print("Post-chorus :" + postchorus + ":")
                 playlist.append("chord_midi/4 - postchorus.mid")
             case "Bridge":
-                print("Bridge      :" + "|".join(bridge) + ":")
+                print("Bridge      :" + bridge + ":")
                 playlist.append("chord_midi/5 - bridge.mid")
             case "Interlude":
-                print("Interlude   :" + "|".join(interlude) + ":")
+                print("Interlude   :" + interlude + ":")
                 playlist.append("chord_midi/6 - interlude.mid")
             case "Outro":
-                print("Outro       :" + "|".join(outro) + ":")
+                print("Outro       :" + outro + ":")
                 playlist.append("chord_midi/7 - outro.mid")
 
     for p in playlist:
