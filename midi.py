@@ -27,9 +27,9 @@ def create_midi(chords, section, progression_length, chord_lengths):
         for note_name in chord.components_with_pitch(root_pitch=4):
             note_number = pretty_midi.note_name_to_number(note_name)
             if chord_lengths[index] == 4:
-                note = pretty_midi.Note(velocity=100, pitch=note_number, start=chord_index, end=(chord_index + 2))
+                note = pretty_midi.Note(velocity=100, pitch=note_number, start=chord_index, end=(chord_index + length))
             elif chord_lengths[index] == 2:
-                note = pretty_midi.Note(velocity=100, pitch=note_number, start=chord_index, end=(chord_index + 1))
+                note = pretty_midi.Note(velocity=100, pitch=note_number, start=chord_index, end=(chord_index + length/2))
             else:
                 raise ValueError("Length of chord is not 2 or 4 beats.")
             piano.notes.append(note)

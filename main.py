@@ -170,7 +170,7 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
         e.transpose(transpose_by)
         transposed_chords.append(e)
 
-    print(section, lengths_of_chords)
+    # print(section, lengths_of_chords)
     create_midi(transposed_chords, section, length, lengths_of_chords)
 
     composition.clear()
