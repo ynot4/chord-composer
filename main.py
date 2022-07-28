@@ -110,22 +110,20 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
     def count_beats():
         total_beats = int()
         for b in lengths_of_chords:
-            total_beats += b[0]
+            total_beats += b
         return total_beats
 
     while count_beats() < length*4:
-        r = random.choices((4, 2), weights=[5, 1])
+        r = random.choices((4, 2), weights=[5, 1])[0]
 
         if lengths_of_chords:
             if len(lengths_of_chords) >= 2:
-                if lengths_of_chords[-1][0] == 2 and lengths_of_chords[-2][0] != 2:
-                    r = random.choices((4, 2), weights=[2, 5])
+                if lengths_of_chords[-1] == 2 and lengths_of_chords[-2] != 2:
+                    r = random.choices((4, 2), weights=[2, 5])[0]
 
         lengths_of_chords.append(r)
         if count_beats() > length*4:
             lengths_of_chords.pop()
-
-    print(lengths_of_chords)
 
     starting_chords_tonality = []  # starting chords with correct tonality (major/minor)
 
@@ -143,7 +141,7 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
     s = random.choice(starting_chords_tonality)
     chord = g.get_vertex(s)
 
-    for _ in range(length):
+    for _ in range(len(lengths_of_chords)):
         composition.append(chord.value)
         chord = g.get_next_word(chord)
 
@@ -172,7 +170,8 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
         e.transpose(transpose_by)
         transposed_chords.append(e)
 
-    create_midi(transposed_chords, section)
+    print(section, lengths_of_chords)
+    create_midi(transposed_chords, section, length, lengths_of_chords)
 
     composition.clear()
     for i in transposed_chords:

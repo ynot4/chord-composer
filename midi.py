@@ -5,10 +5,10 @@ os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 import pygame
 
 
-def create_midi(chords, section):
-    if len(chords) == 4:
+def create_midi(chords, section, progression_length, chord_lengths):
+    if progression_length == 4:
         midi_data = pretty_midi.PrettyMIDI("chord_midi/drums_4_bars.mid")
-    elif len(chords) == 8:
+    elif progression_length == 8:
         midi_data = pretty_midi.PrettyMIDI("chord_midi/drums_8_bars.mid")
     else:
         midi_data = pretty_midi.PrettyMIDI("chord_midi/drums_16_bars.mid")
@@ -21,25 +21,49 @@ def create_midi(chords, section):
 
     length = 2
 
-    for n, chord in enumerate(chords):  # piano chords to midi
+    chord_index = 0
+    index = 0
+    for chord in chords:  # piano chords to midi
         for note_name in chord.components_with_pitch(root_pitch=4):
             note_number = pretty_midi.note_name_to_number(note_name)
-            note = pretty_midi.Note(velocity=100, pitch=note_number, start=n * length, end=(n + 1) * length)
+            if chord_lengths[index] == 4:
+                note = pretty_midi.Note(velocity=100, pitch=note_number, start=chord_index, end=(chord_index + 1))
+            elif chord_lengths[index] == 2:
+                note = pretty_midi.Note(velocity=100, pitch=note_number, start=chord_index, end=(chord_index + 1))
+            else:
+                raise ValueError("Length of chord is not 2 or 4 beats.")
             piano.notes.append(note)
 
-    for n, chord in enumerate(chords):  # create bouncy bass-line
-        m = n * length
-        l = length/8
-        for i in range(8):
-            if i % 2:  # skip odd values of i
-                continue
-            note_number = pretty_midi.note_name_to_number(chord.root + "1")
-            note = pretty_midi.Note(velocity=100, pitch=note_number, start=i * l + m, end=(i + 1) * l + m)
-            bass.notes.append(note)
-            i += 1
-            note_number = pretty_midi.note_name_to_number(chord.root + "2")
-            note = pretty_midi.Note(velocity=90, pitch=note_number, start=i * l + m, end=(i + 1) * l + m)
-            bass.notes.append(note)
+        if chord_lengths[index] == 4:
+            chord_index += length
+        elif chord_lengths[index] == 2:
+            chord_index += length/2
+        index += 1
+
+    # for n, chord in enumerate(chords):  # piano chords to midi
+    #     for note_name in chord.components_with_pitch(root_pitch=4):
+    #         note_number = pretty_midi.note_name_to_number(note_name)
+    #         if chord_lengths[n] == 4:
+    #             note = pretty_midi.Note(velocity=100, pitch=note_number, start=n * length, end=(n + 1) * length)
+    #         elif chord_lengths[n] == 2:
+    #             note = pretty_midi.Note(velocity=100, pitch=note_number, start=n * length, end=(n + 1) * length)
+    #         else:
+    #             raise ValueError("Length of chord is not 2 or 4 beats.")
+    #         piano.notes.append(note)
+
+    # for n, chord in enumerate(chords):  # create bouncy bass-line
+    #     m = n * length
+    #     l = length/8
+    #     for i in range(8):
+    #         if i % 2:  # skip odd values of i
+    #             continue
+    #         note_number = pretty_midi.note_name_to_number(chord.root + "1")
+    #         note = pretty_midi.Note(velocity=100, pitch=note_number, start=i * l + m, end=(i + 1) * l + m)
+    #         bass.notes.append(note)
+    #         i += 1
+    #         note_number = pretty_midi.note_name_to_number(chord.root + "2")
+    #         note = pretty_midi.Note(velocity=90, pitch=note_number, start=i * l + m, end=(i + 1) * l + m)
+    #         bass.notes.append(note)
 
     midi_data.instruments.append(piano)
     midi_data.instruments.append(bass)
