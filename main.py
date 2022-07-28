@@ -105,9 +105,25 @@ def make_graph(transposed_progressions, song_sections, section, song_keys):
 def compose(g, starting_chords, starting_chords_keys, section, transpose_by, tonality):
     length = (random.choices((1, 2, 4), weights=[12, 8, 1]))[0] * 4  # length of chord progression: 4, 8, 16 bars
 
+    lengths_of_chords = []  # how many beats in the bar the chord uses
+
+    def count_beats():
+        total_beats = int()
+        for b in lengths_of_chords:
+            total_beats += b[0]
+        return total_beats
+
+    while count_beats() < length*4:
+        r = random.choices((4, 2), weights=[5, 1])
+        lengths_of_chords.append(r)
+        if count_beats() > length*4:
+            lengths_of_chords.pop()
+
+    print(lengths_of_chords)
+
     starting_chords_tonality = []  # starting chords with correct tonality (major/minor)
 
-    for i in range(len(starting_chords_keys)):
+    for i in range(len(starting_chords_keys)):  # get a list of starting chords for the chosen tonality
         c = starting_chords[i]
         k = starting_chords_keys[i]
         if tonality == "major":  # if major key
