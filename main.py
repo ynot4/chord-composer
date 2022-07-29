@@ -114,7 +114,7 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
         return total_beats
 
     while count_beats() < length*4:
-        r = random.choices((4, 2), weights=[5, 1])[0]
+        r = random.choices((4, 2), weights=[5, 2])[0]
 
         if lengths_of_chords:
             if len(lengths_of_chords) >= 2:
@@ -173,7 +173,7 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
         e.transpose(transpose_by)
         transposed_chords.append(e)
 
-    print(section, lengths_of_chords)
+    # print(section, lengths_of_chords)
     create_midi(transposed_chords, section, length, lengths_of_chords)
 
     composition.clear()
@@ -207,26 +207,32 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
 def main():
     transposed_progressions, pychord_transposed_progressions, song_sections, song_keys = get_chords_from_file("songs_chords.txt")
 
-    # g = graph, s = possible starting chords, k = keys of starting chords
-    intro_g, intro_s, intro_k = make_graph(transposed_progressions, song_sections, "intro", song_keys)
-    verse_g, verse_s, verse_k = make_graph(transposed_progressions, song_sections, "verse", song_keys)
-    prechorus_g, prechorus_s, prechorus_k = make_graph(transposed_progressions, song_sections, "prechorus", song_keys)
-    chorus_g, chorus_s, chorus_k = make_graph(transposed_progressions, song_sections, "chorus", song_keys)
-    postchorus_g, postchorus_s, postchorus_k = make_graph(transposed_progressions, song_sections, "postchorus", song_keys)
-    bridge_g, bridge_s, bridge_k = make_graph(transposed_progressions, song_sections, "bridge", song_keys)
-    interlude_g, interlude_s, interlude_k = make_graph(transposed_progressions, song_sections, "interlude", song_keys)
-    outro_g, outro_s, outro_k = make_graph(transposed_progressions, song_sections, "outro", song_keys)
-
     transpose_by = random.randrange(0, 12)
     tonality = random.choice(("major", "minor"))
 
+    # g = graph, s = possible starting chords, k = keys of starting chords
+    intro_g, intro_s, intro_k = make_graph(transposed_progressions, song_sections, "intro", song_keys)
     intro = compose(intro_g, intro_s, intro_k, "intro", transpose_by, tonality)
+
+    verse_g, verse_s, verse_k = make_graph(transposed_progressions, song_sections, "verse", song_keys)
     verse = compose(verse_g, verse_s, verse_k, "verse", transpose_by, tonality)
+
+    prechorus_g, prechorus_s, prechorus_k = make_graph(transposed_progressions, song_sections, "prechorus", song_keys)
     prechorus = compose(prechorus_g, prechorus_s, prechorus_k, "prechorus", transpose_by, tonality)
+
+    chorus_g, chorus_s, chorus_k = make_graph(transposed_progressions, song_sections, "chorus", song_keys)
     chorus = compose(chorus_g, chorus_s, chorus_k, "chorus", transpose_by, tonality)
+
+    postchorus_g, postchorus_s, postchorus_k = make_graph(transposed_progressions, song_sections, "postchorus", song_keys)
     postchorus = compose(postchorus_g, postchorus_s, postchorus_k, "postchorus", transpose_by, tonality)
+
+    bridge_g, bridge_s, bridge_k = make_graph(transposed_progressions, song_sections, "bridge", song_keys)
     bridge = compose(bridge_g, bridge_s, bridge_k, "bridge", transpose_by, tonality)
+
+    interlude_g, interlude_s, interlude_k = make_graph(transposed_progressions, song_sections, "interlude", song_keys)
     interlude = compose(interlude_g, interlude_s, interlude_k, "interlude", transpose_by, tonality)
+
+    outro_g, outro_s, outro_k = make_graph(transposed_progressions, song_sections, "outro", song_keys)
     outro = compose(outro_g, outro_s, outro_k, "outro", transpose_by, tonality)
 
     song_name = "SONG NAME"
@@ -235,34 +241,64 @@ def main():
 
     print(f"{song_name} by {artist} (Key: {tonic} {tonality})\n")
     s = structure_song()
+
+    def get_prog_length(prog):  # get number of bars in chord progression
+        return len(prog.split("|"))
+
+    def get_multiplier(section_progression):
+        l = get_prog_length(section_progression)
+        if l == 4:
+            multiplier = (random.choices((1, 2, 4), weights=[1, 8, 6]))[0]  # how many times to loop the chord progression
+        elif l == 8:
+            multiplier = (random.choice((1, 2)))  # how many times to loop the chord progression
+        else:
+            multiplier = 1
+        return multiplier
+
     playlist = []  # list of midi files to play to create song
 
     for i in s:
         match i:
             case "Intro":
-                print("Intro       :" + intro + ":")
-                playlist.append("chord_midi/0 - intro.mid")
+                m = get_multiplier(intro)
+                print("Intro       :" + intro + ":  x" + str(m))
+                for i in range(m):
+                    playlist.append("chord_midi/0 - intro.mid")
             case "Verse":
-                print("Verse       :" + verse + ":")
-                playlist.append("chord_midi/1 - verse.mid")
+                m = get_multiplier(verse)
+                print("Verse       :" + verse + ":  x" + str(m))
+                for i in range(m):
+                    playlist.append("chord_midi/1 - verse.mid")
             case "Pre-chorus":
-                print("Pre-chorus  :" + prechorus + ":")
-                playlist.append("chord_midi/2 - prechorus.mid")
+                m = get_multiplier(prechorus)
+                print("Pre-chorus  :" + prechorus + ":  x" + str(m))
+                for i in range(m):
+                    playlist.append("chord_midi/2 - prechorus.mid")
             case "Chorus":
-                print("Chorus      :" + chorus + ":")
-                playlist.append("chord_midi/3 - chorus.mid")
+                m = get_multiplier(chorus)
+                print("Chorus      :" + chorus + ":  x" + str(m))
+                for i in range(m):
+                    playlist.append("chord_midi/3 - chorus.mid")
             case "Post-chorus":
-                print("Post-chorus :" + postchorus + ":")
-                playlist.append("chord_midi/4 - postchorus.mid")
+                m = get_multiplier(postchorus)
+                print("Post-chorus :" + postchorus + ":  x" + str(m))
+                for i in range(m):
+                    playlist.append("chord_midi/4 - postchorus.mid")
             case "Bridge":
-                print("Bridge      :" + bridge + ":")
-                playlist.append("chord_midi/5 - bridge.mid")
+                m = get_multiplier(bridge)
+                print("Bridge      :" + bridge + ":  x" + str(m))
+                for i in range(m):
+                    playlist.append("chord_midi/5 - bridge.mid")
             case "Interlude":
-                print("Interlude   :" + interlude + ":")
-                playlist.append("chord_midi/6 - interlude.mid")
+                m = get_multiplier(interlude)
+                print("Interlude   :" + interlude + ":  x" + str(m))
+                for i in range(m):
+                    playlist.append("chord_midi/6 - interlude.mid")
             case "Outro":
-                print("Outro       :" + outro + ":")
-                playlist.append("chord_midi/7 - outro.mid")
+                m = get_multiplier(outro)
+                print("Outro       :" + outro + ":  x" + str(m))
+                for i in range(m):
+                    playlist.append("chord_midi/7 - outro.mid")
 
     for p in playlist:
         play_midi(p)

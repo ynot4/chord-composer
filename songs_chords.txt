@@ -31,7 +31,8 @@
 [aespa — Girls (Po)] {D#m} :G#m///C#/|D#m|B///C#/|D#m:
 [aespa — Girls (B)] {D#m} :D#m|G#7|B|A#7:
 [aespa — Girls (D)] {D#m} :Fm|Fm|D#m|D#m:
-[aespa — Life's Too Short (AB)] {C} :C|Am|Em|F:
+[aespa — Life's Too Short (I,V,C,Po)] {C} :C|Am|Em|F:
+[aespa — Life's Too Short (P)] {C} :C|Am|Em|F|C|Am|Em|Fm:
 [aespa — Life's Too Short (B)] {C} :Dm|C//G//|C|F|Dm|C//G//|F|Fm:
 [aespa — Next Level (I,V,C)] {F#m} :F#m//A/B/|F#m//A/B/:
 [aespa — Next Level (Po)] {F#m} :F#m//C#//|E//B//|D//A//|C#//F#m//:

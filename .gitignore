@@ -1,5 +1,5 @@
 /test.py
-/to-do.py
+/to-do.txt
 chord_midi/*
 !chord_midi/drums_4_bars.mid
 !chord_midi/drums_8_bars.mid
