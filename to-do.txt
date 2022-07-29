@@ -3,7 +3,6 @@ randomise tempo
 chance of chord progressions being used for multiple sections
 
 different chord midi patterns
-chords can switch at different intervals
-use slashes in chord progression output for uneven bars
+
 playback can loop progressions to create full sections, increase length
 possibility of inserting a random progression anywhere in song
