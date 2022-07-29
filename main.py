@@ -170,7 +170,7 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
         e.transpose(transpose_by)
         transposed_chords.append(e)
 
-    # print(section, lengths_of_chords)
+    print(section, lengths_of_chords)
     create_midi(transposed_chords, section, length, lengths_of_chords)
 
     composition.clear()
@@ -178,16 +178,25 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
         composition.append(i.chord)
 
     string = ""
+    beats_running_total = int()
     for j in range(len(composition)):
         if not string:
             string += composition[j]
+            if lengths_of_chords[j] == 2:
+                string += "//"
         else:
-            string += ("|" + composition[j])
-        if lengths_of_chords[j] == 4:
-            string += "////"
-            # string += "|"
-        elif lengths_of_chords[j] == 2:
-            string += "//"
+            if not beats_running_total % 4:  # if beat number divisible by four (start of bar)
+                if lengths_of_chords[j] == 4:
+                    string += "|" + composition[j]
+                elif lengths_of_chords[j] == 2:
+                    string += "|" + composition[j] + "//"
+            else:  # if in middle of bar
+                if lengths_of_chords[j] == 4:
+                    string += composition[j] + "//|" + composition[j] + "//"
+                elif lengths_of_chords[j] == 2:
+                    string += composition[j] + "//"
+
+        beats_running_total += lengths_of_chords[j]
 
     return string
 
