@@ -31,6 +31,10 @@
 [aespa — Girls (Po)] {D#m} :G#m///C#/|D#m|B///C#/|D#m:
 [aespa — Girls (B)] {D#m} :D#m|G#7|B|A#7:
 [aespa — Girls (D)] {D#m} :Fm|Fm|D#m|D#m:
+[aespa — ICU (I,V,O)] {E} :E//B//|A|C#m//B/G#m/|A:
+[aespa — ICU (P)] {E} :F#m//E//|B|F#m//E//|B:
+[aespa — ICU (C)] {E} :E|E///G#m/|A|A|E|E///G#m/|A|A//B//|C#m//B//|E/G#m/A//|C#m//B//|E/G#m/A//|C#m//B//|G#m//A//|F#m//E//|B:
+[aespa — ICU (Po)] {E} :E|E///G#m/|A|A///B/|C#m|C#m|B|B:
 [aespa — Life's Too Short (I,V,C,Po)] {C} :C|Am|Em|F:
 [aespa — Life's Too Short (P)] {C} :C|Am|Em|F|C|Am|Em|Fm:
 [aespa — Life's Too Short (B)] {C} :Dm|C//G//|C|F|Dm|C//G//|F|Fm:
