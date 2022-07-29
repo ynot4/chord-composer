@@ -142,7 +142,7 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
     chord = g.get_vertex(s)
 
     for k in range(len(lengths_of_chords)):
-        if len(composition) > 1:
+        if len(composition) >= 1:
             while lengths_of_chords[k] == 2 and composition[-1] == chord.value:
                 chord = g.get_next_word(chord)
         composition.append(chord.value)
