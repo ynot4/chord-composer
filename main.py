@@ -34,7 +34,7 @@ def get_chords_from_file(file_path):
                 line_chords_only = re.sub(r":", "", line_chords_only)  # remove colon characters :
                 text += line_chords_only
 
-    text = " ".join(text.split())  # turn whitespace into just spaces
+    text = text.replace(" ", "")  # turn whitespace into just spaces
     chord_progressions = text.split()  # split on spaces again, create list
     chord_progressions = resolve_progressions(file_path, song_keys, chord_progressions)
 
@@ -207,7 +207,7 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
 def main():
     transposed_progressions, pychord_transposed_progressions, song_sections, song_keys = get_chords_from_file("songs_chords.txt")
 
-    transpose_by = 0
+    transpose_by = random.randrange(0, 12)
     tonality = random.choice(("major", "minor"))
 
     # g = graph, s = possible starting chords, k = keys of starting chords
