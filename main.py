@@ -162,8 +162,8 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
         randomness_q = random.randrange(0, 100)  # randomness for chord quality
         e = d
         if randomness_r > 90:
-            up_or_down = random.randrange(-11, 12)
-            e.transpose(up_or_down)
+            transpose_chord_by = random.randrange(0, 12)
+            e.transpose(transpose_chord_by)
         if randomness_q > 90:
             q = d.root + random.choice(qualities)
             e = Chord(q)
@@ -245,14 +245,20 @@ def main():
     def get_prog_length(prog):  # get number of bars in chord progression
         return len(prog.split("|"))
 
-    def get_multiplier(section_progression):
-        l = get_prog_length(section_progression)
-        if l == 4:
-            multiplier = (random.choices((1, 2, 4), weights=[1, 8, 6]))[0]  # how many times to loop the chord progression
-        elif l == 8:
-            multiplier = (random.choice((1, 2)))  # how many times to loop the chord progression
-        else:
-            multiplier = 1
+    def get_multiplier(*args):
+        l = get_prog_length(args[0])
+        if len(args) == 1:  # if not intro, pre-chorus or post-chorus
+            if l == 4:
+                multiplier = (random.choices((1, 2, 4), weights=[1, 8, 6]))[0]  # how many times to loop the chord progression
+            elif l == 8:
+                multiplier = (random.choice((1, 2)))  # how many times to loop the chord progression
+            else:
+                multiplier = 1
+        else:  # if intro, pre-chorus or post-chorus, these should be shorter than other sections
+            if l == 4:
+                multiplier = (random.choices((1, 2), weights=[1, 4]))[0]  # how many times to loop the chord progression
+            else:
+                multiplier = 1
         return multiplier
 
     playlist = []  # list of midi files to play to create song
@@ -260,7 +266,7 @@ def main():
     for i in s:
         match i:
             case "Intro":
-                m = get_multiplier(intro)
+                m = get_multiplier(intro, "")
                 print("Intro       :" + intro + ":  x" + str(m))
                 for i in range(m):
                     playlist.append("chord_midi/0 - intro.mid")
@@ -270,7 +276,7 @@ def main():
                 for i in range(m):
                     playlist.append("chord_midi/1 - verse.mid")
             case "Pre-chorus":
-                m = get_multiplier(prechorus)
+                m = get_multiplier(prechorus, "")
                 print("Pre-chorus  :" + prechorus + ":  x" + str(m))
                 for i in range(m):
                     playlist.append("chord_midi/2 - prechorus.mid")
@@ -280,7 +286,7 @@ def main():
                 for i in range(m):
                     playlist.append("chord_midi/3 - chorus.mid")
             case "Post-chorus":
-                m = get_multiplier(postchorus)
+                m = get_multiplier(postchorus, "")
                 print("Post-chorus :" + postchorus + ":  x" + str(m))
                 for i in range(m):
                     playlist.append("chord_midi/4 - postchorus.mid")
@@ -310,7 +316,7 @@ if __name__ == '__main__':
     while not user_exit:
         user_input = input("Press R to replay or X to quit. Press any other key to generate a new progression.\n")
         if user_input.lower() == "r":
-            play_midi("chord_midi/3 - chorus.mid")
+            pass
         elif user_input.lower() == "x":
             user_exit = True
         else:

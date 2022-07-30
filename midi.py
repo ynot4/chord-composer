@@ -126,8 +126,10 @@ def play_midi(midi_filename):
     freq = 44100  # audio CD quality
     bitsize = -16  # unsigned 16 bit
     channels = 2  # 1 is mono, 2 is stereo
-    buffer = 1024  # number of samples
-    pygame.mixer.init(freq, bitsize, channels, buffer)
+    buffer = 512  # number of samples
+    pygame.mixer.pre_init(freq, bitsize, channels, buffer)
+    pygame.mixer.init()
+    pygame.init()
 
     # optional volume 0 to 1.0
     pygame.mixer.music.set_volume(0.8)

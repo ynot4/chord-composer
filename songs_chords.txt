@@ -21,9 +21,16 @@
 # The only time signature supported at the moment is 4/4.
 # Do not use curly brackets () in the song name.
 
-[test — minor (A)] {Cm} :Cm|F|Bb|Gm:
-[test — major (A)] {G} :G|Bm|Em|Em:
+# [test — minor (A)] {Cm} :Cm|F|Bb|Gm:
+# [test — major (A)] {G} :G|Bm|Em|Em:
 
+[aespa — Black Mamba (AB)] {Em} :Em//G/Am/|Em//G/Am/|Em//G/Am/|Em//G/Am/:
+[aespa — Black Mamba (B)] {Em} :C|Am|Em|D:
+[aespa — Dreams Come True (I)] {Dm} :Dm|Dm|Dm|Dm:
+[aespa — Dreams Come True (V)] {Dm} :Bb|Bb|Dm|Dm|Bb|Bb|Dm|C:
+[aespa — Dreams Come True (C)] {Dm} :Gm|Am//Dm//|Gm|Am//D//:
+[aespa — Dreams Come True (D)] {Dm} :Bb//Dm//|C//G//|Bb//Dm//|C|Bb//Dm//|C//G//|Bb//Dm//|C|Bb|Am:
+[aespa — Dreams Come True (B)] {Dm} :Bb//Am//|Gm|Bb//Am//|Dm|Am|D|Gm//Am//|A:
 [aespa — Girls (V)] {D#m} :D#m|D#m|D#m|D#m:
 [aespa — Girls (E)] {D#m} :D#m//Em//|D#m//Dm//|D#m//Em//|A#:
 [aespa — Girls (P)] {D#m} :B//G#m//|D#m//F#//|B//Adim//|A#7:
@@ -58,6 +65,14 @@
 [BLACKPINK — Don't Know What To Do (V,C)] {D} :D|D|F#m|F#m|D|D|E|E:
 [BLACKPINK — Don't Know What To Do (P)] {D} :Bm|E|A|F#m|Bm|E|A|F#m|Bm|E|A|F#m|Bm|Bm|E|E:
 [BLACKPINK — Don't Know What To Do (O)] {D} :D|A|C#m|F#m//E//|D|A|C#m:
+[BLACKPINK — How You Like That (I)] {D#m} :D#m//Em//|D#m//Em//|D#m//Em//|F#//Em//|D#m:
+[BLACKPINK — How You Like That (V)] {D#m} :D#m|A#m|F#|B:
+[BLACKPINK — How You Like That (P)] {D#m} :D#m|A#m|F#|B|D#m|A#m|F#|F#:
+[BLACKPINK — How You Like That (C)] {D#m} :D#m|D#m/Em///|D#m|D#m/Em///|D#m|D#m|G#m|A#m//Em//:
+[BLACKPINK — How You Like That (Po)] {D#m} :D#m|D#m|D#m|D#m/Em///|D#m|D#m|G#m|A#m//Em//:
+[BLACKPINK — How You Like That (V)] {D#m} :D#m|D#m|Em|D#m:
+[BLACKPINK — How You Like That (B)] {D#m} :D#m|G#m|B|A#|D#m|G#m|F#|E//D#m//:
+[BLACKPINK — How You Like That (O)] {D#m} :D#m|Em//D#m//|D#m|Em//D#m//:
 [BLACKPINK — Kick It (V)] {E} :E|E|C#m|C#m:
 [BLACKPINK — Kick It (P)] {E} :F#m//B//|C#m|F#m//B//|C#m:
 [BLACKPINK — Kick It (C)] {E} :E|C#m|E|C#m|A//B//|C#m|A//B//|C#m:
@@ -71,6 +86,8 @@
 [BLACKPINK — Lovesick Girls (B)] {D#m} :B|C#|A#|D#m|B|C#|D#m|D#m:
 [BLACKPINK — Lovesick Girls (C)] {D#m} :B|B|D#m|A#m:
 [BLACKPINK — Lovesick Girls (O)] {D#m} :B|B|D#m|A#m|B|B|D#m|A#//C#//|B:
+[BLACKPINK — Stay (AP)] {Bbm} :Bbm//Gb//|Db|Bbm//Gb//|Db:
+[BLACKPINK — Stay (P)] {Bbm} :Bbm//Ab//|Gb|Bbm//Ab//|Gb|Bbm//Ab//|Gb|Ebm|Ab:
 [BLACKPINK — You Never Know (V)] {F} :F|A|Dm|Bb:
 [BLACKPINK — You Never Know (P)] {F} :Bb//C//|F/C/Dm//|Bb//C//|F//Cm6//|Bb//C//|F/C/Dm//|Bb//C//|Dm:
 [BLACKPINK — You Never Know (C)] {F} :F|A|Dm|Bb//Bbm//|Dm|A|Bb|C#6:
@@ -78,8 +95,12 @@
 [BTS — 00:00 (I,V,C)] {Ab} :Ab|Cm|Db|Dbm:
 [BTS — 00:00 (P)] {Ab} :Bbm//Eb//|C//Fm//|Db|Dbm:
 [BTS — 00:00 (B)] {Ab} :Fm|Eaug|Ab|Bb|Db//C//|Fm//Eb//|Bbm|Dbm:
+[BTS — Airplane, Pt. 2 (A)] {Cm} :Cm|Cm|G|G:
+[BTS — Best Of Me (A)] {Cm} :Cm|Ab|Eb|Eb:
 [BTS — Black Swan (I,Po,O)] {Dm} :Bbmaj7|Gm|Dm|C|Bbmaj7|Gm|Dm|Dm:
 [BTS — Black Swan (V,P,C)] {Dm} :Bbmaj7|Gm|Dm|C:
+[BTS — Blood Sweat & Tears (AB)] {Bbm} :Bbm//Ab//|Gb|Bbm//Ab//|Gb:
+[BTS — Blood Sweat & Tears (B)] {Bbm} :Ebm|Bbsus4//Bb//|Gb//Ab//|Bb|Ebm|Db|B//A//|Ab:
 [BTS — Boy In Luv (Po,V)] {Am} :Am|Am//C/Am/|Am|Am//C/Am/|Am|Am//C/Am/|Am|C//Dm//:
 [BTS — Boy In Luv (P)] {Am} :Am|Am|Bm|Bm|C|C|Dm|Em:
 [BTS — Boy In Luv (C)] {Am} :Am|Am|F|F|C|C|G|G//E7//:
@@ -93,9 +114,23 @@
 [BTS — Butterfly (P)] {Gb} :Gb|Db|Fm|Bbm|Gb|Db|F|F|:
 [BTS — Butterfly (Po,B)] {Gb} :Gb|A|B|Db:
 [BTS — Butterfly (P)] {Gb} :Gb|Db|F|F|:
+[BTS — Converse High (I)] {Gb} :Gbmaj7|Ab|Fm7|Bb7sus4//Bb7//:
+[BTS — Converse High (C,V,Po)] {Gb} :Ebm7|Ab|Dbmaj7|Bbm7:
+[BTS — Converse High (P)] {Gb} :Ebm7|Ab|Fm7|Bbm7|Ebm7|Ab|Dbmaj7|Bbm7:
+[BTS — Dynamite (I,C,Po,B)] {C#m} :C#m//F#m7//|B//E//:
+[BTS — Dynamite (V,P)] {C#m} :C#m|F#m7|B|E:
+[BTS — Dynamite (D)] {C#m} :E|E|E|E|C#m//F#m7//|B//E//|C#m//F#m7//|B//E//:
+# [BTS — Dynamite (C,Po)] {C#m} :D#m//G#m7//|C#//F#//:
 [BTS — Epiphany (I,V,Po,O)] {Dm} :Bb|Dm|C|C:
 [BTS — Epiphany (C,D)] {Dm} :F|F|Dm|Dm|Bb|Bb|C|C:
 [BTS — Epiphany (B)] {Dm} :Dm|Am|Bb|C:
+[BTS — Fly to My Room (A)] {B} :B|D#m|G#m|F#m//B//|E|D#m|C#m|F#:
+[BTS — For Youth (A)] {D} :D|F#7|G|A:
+# [BTS — For Youth (O)] {D} :Eb|G7|Cm|Bbm//Eb//|Ab|Gm|Cm|Fm//Gm//|Ab//Bb//|Eb|G7|Cm|Bb|Eb:
+[BTS — Go Go (I,V)] {Bbm} :Bbm|Gb|Ab|Bbm:
+[BTS — Go Go (V,P,C)] {Bbm} :Bbm|Gb|Ab|Fm|Bbm|Gb|Ab|Bbm:
+[BTS — Go Go (O)] {Bbm} :Bbm|Bbm|Bbm|Bbm|Gb|Gb|Gb|Gb:
+[BTS — I'm Fine (A)] {Bm} :Bm///G/|G|D///A/|A:
 [BTS — Let Go (I,P,B)] {E} :E|G#m|C#m|D//B//:
 [BTS — Let Go (V)] {E} :E|G#m|C#m|A:
 [BTS — Let Go (C,Po)] {E} :E|G#m|C#m|Am:
@@ -104,11 +139,26 @@
 [BTS — Lie (P)] {F#m} :F#m|G#m7b5|A//Bm//|C#:
 [BTS — Lie (C)] {F#m} :F#|F#|Bm|Bm|D|D|Dm|Dm|F#|F#|Bm|Bm|D|Dm|C#7|F#m:
 [BTS — Lie (B)] {F#m} :Bm|D|C#|F#m|Bm|D|C#|C#:
+[BTS — Life Goes On (I,P,C,O)] {Ab} :Ab|Abmaj7|Db|Dbm:
+[BTS — Life Goes On (V)] {Ab} :Ab|Ab|Db|Dbm:
+[BTS — Lights (V,P,B)] {Bb} :Bb|F|C|Dm///C/:
+[BTS — Lights (C,Po,D,O))] {Bb} :Bb|F|A7|Dm///C/:
+[BTS — Lost (AB)] {F} :Fmaj7//E7//|Am7//Gm7/C/|Fmaj7//E7//|Am7//Gm7/C/:
+[BTS — Lost (B)] {F} :Fmaj7|Bm7b5//E7//|Am7|Gm7//C//|Fmaj7|Bm7b5//E7//|Am7|E7:
 [BTS — Love Maze (A)] {C#m} :C#m|Bm//E//|A|D#dim//G#|C#m//G#7//|Bm//E//|A|D#dim//G#:
+[BTS — Magic Shop (I)] {Gb} :Gb|Gb|Ebm|Ebm:
+[BTS — Magic Shop (V,P,C,Po,B,D)] {Gb} :Gb|Db|Ebm|B:
+[BTS — Make It Right (AP)] {Em} :Em|G|C|C//D//:
+[BTS — Make It Right (P)] {Em} :Em|C|G|Bm|Em|C|G|D:
 [BTS — MIC Drop (I,V,C)] {D#m} :D#m|D#m|D#m|D#m|A#m|A#m|A#m|A#m:
 [BTS — MIC Drop (P)] {D#m} :D#m//A#//|B|B|B//C#//:
 [BTS — MIC Drop (B)] {D#m} :D#m|A#m|B|G#m//A#:
 [BTS — MIC Drop (O)] {D#m} :D#m|A#m|B|G#m//A#|D#m|A#m|B|A#//C#//:
+[BTS — Mikrokosmos (A)] {Cm} :Cm|Ab|Eb|Bb:
+[BTS — N.O (I,V,Po)] {Bm} :Bm|Bm|F#m|F#m:
+[BTS — N.O (P)] {Bm} :G|F#m|Em|A:
+[BTS — N.O (C)] {Bm} :Bm|F#m|Em|F#m:
+[BTS — N.O (O)] {Bm} :Bm|Bm|Bm|Bm:
 [BTS — Permission to Dance (V,C,D)] {E} :E//B//|C#m//B//|A//G#m//|A//B//:
 [BTS — Permission to Dance (P,B)] {E} :C#m|G#7|A|B:
 [BTS — Permission to Dance (Po)] {E} :C#m|G#7|A|B|E//B//|C#m//B//|A//G#m//|F#m//B//:
@@ -121,6 +171,7 @@
 [BTS — Spring Day (C,Po,O)] {Eb} :Eb|Gm|Ab|Abm|Cm|Gm|Ab|Abm:
 [BTS — Spring Day (B)] {Eb} :Ab|Bb|Gm|Ab|Ab|Bb|Gm|Bb:
 [BTS — Stay Gold (A)] {Db} :Db|Db|F7|F7|Bbm|Bbm|Gb|Gb:
+[BTS — Telepathy (A)] {Fm} :Fm7|Bb|Eb|Cm7:
 [BTS — The Truth Untold (V)] {Dbm} :Dbm|Abm|A|A|E|Gbm|A|A|Dbm|Abm|A|A|E|Gbm|Dbm|Dbm:
 [BTS — The Truth Untold (P)] {Dbm} :A//Dbm//|Dbm|B|B:
 [BTS — The Truth Untold (C)] {Dbm} :E|Ab7|A|A|E|Ab7|A|A|E|Ab7|A|A//B//|Dbm|Ab7|A|A|:
@@ -128,17 +179,38 @@
 [BTS — The Truth Untold (D)] {Dbm} :Dbm|Abm|A|A:
 [BTS — Yet To Come (I,V,P,O)] {Db} :Db//Gb//|Cdim//F7//|Bbm//Eb7//|Gb//Ab//:
 [BTS — Yet To Come (C,V)] {Db} :Db//Gb//|Cdim//F7//|Bbm//Eb7//|Ebm//Ab//:
+[ENHYPEN — Billy Poco (I,Po,B)] {G} :G|G|G|G:
+[ENHYPEN — Billy Poco (V)] {G} :G|F|G|F|G|F|G//A#//|C//D//:
+[ENHYPEN — Billy Poco (C)] {G} :G|A#|C|D#//F//|G|A#|C|D#:
+[ENHYPEN — Blessed-Cursed (A)] {Em} :Em|C|C///D/|Em:
 [ENHYPEN — Fever (A)] {F#m} :F#m///A/|A|D|D:
+[ENHYPEN — Foreshadow (A)] {Bm} :Bm|G|D|Em:
+[ENHYPEN — Forget Me Not (I,V,O)] {Db} :Db|Cm|Bbm|Ab:
+[ENHYPEN — Forget Me Not (P)] {Db} :Db//Ab//|Eb//Fm//|Eb//Db//|Ab//Eb//:
+[ENHYPEN — Forget Me Not (C)] {Db} :Db|Cm|Bbm|Ab|Dm7b5//Db//|Cm//Fm//|Bbm|Eb|:
+[ENHYPEN — Forget Me Not (B))] {Db} :Db///Eb/|Fm|Db///Eb/|Fm|Bbm///Eb/|Fm|Db///Eb/|Fm:
 [ENHYPEN — Future Perfect (AP)] {Am} :Am|Am|Am|Am:
 [ENHYPEN — Future Perfect (P)] {Am} :F|Dm|Am|G:
 [ENHYPEN — Given-Taken (I,V,P,Po,B)] {G#m} :G#m|D#m|E|C#m:
 [ENHYPEN — Given-Taken (C)] {G#m} :E|F#|G#m|D#m:
+[ENHYPEN — Go Big or Go Home (A)] {Bbm} :Bbm//Fm//|Gb//Ab//|Bbm//Fm//|Gb//Ab//:
+[ENHYPEN — Go Big or Go Home (P)] {Bbm} :Bbm|Ebm//Ab//|Bbm|Ebm//Ab//|Bbm|Ebm//Ab//|Gb|F:
 [ENHYPEN — Let Me In (A)] {G#m} :G#m|D#m|E|E:
 [ENHYPEN — Polaroid Love (A)] {Cm} :Cm|F|Bb|Gm:
-[ENHYPEN — Upper Side Dreamin (I)] {Ab} :Ab|Fm|C|Bb:
-[ENHYPEN — Upper Side Dreamin (V)] {Ab} :Ab|Fm|Cm|Cm|Ab|Fm|C|C|:
-[ENHYPEN — Upper Side Dreamin (P)] {Ab} :F|Ab|C|C|F|Ab|G7|Cm:
-[ENHYPEN — Upper Side Dreamin (C,Po,B)] {Ab} :Ab|Fm|C|C:
+[ENHYPEN — Shout Out (AB)] {G} :G|D|Bm|A:
+[ENHYPEN — Shout Out (B)] {G} :G|A|Bm|D|G|A|Bm|Bm:
+[ENHYPEN — Tamed-Dashed (V,C,Po)] {A} :A|F#m|C#m|C#m:
+[ENHYPEN — Tamed-Dashed (P)] {A} :F#m|A|B|Cdim:
+[ENHYPEN — Tamed-Dashed (B)] {A} :A|F#m|C#m|C#m|A|F#m|C#m|Am:
+[ENHYPEN — Upper Side Dreamin' (I)] {Ab} :Ab|Fm|C|Bb:
+[ENHYPEN — Upper Side Dreamin' (V)] {Ab} :Ab|Fm|Cm|Cm|Ab|Fm|C|C|:
+[ENHYPEN — Upper Side Dreamin' (P)] {Ab} :F|Ab|C|C|F|Ab|G7|Cm:
+[ENHYPEN — Upper Side Dreamin' (C,Po,B)] {Ab} :Ab|Fm|C|C:
+[ENHYPEN — 10 Months (A)] {F#m} :F#m|B|E|E//A/G#m/:
+[ENHYPEN (ft. Yeonjun) — Blockbuster (I,V)] {G#m} :G#m|G#m|G#m|G#m:
+[ENHYPEN (ft. Yeonjun) — Blockbuster (P)] {G#m} :C#m|B|D#7|G#m|C#m|B|D#7|D#7:
+[ENHYPEN (ft. Yeonjun) — Blockbuster (C,Po)] {G#m} :E|F#|G#m|G#m:
+[ENHYPEN (ft. Yeonjun) — Blockbuster (B)] {G#m} :G#m|E|C#m|D#7|G#m|E|C#m|D#7|G#m|E|C#m|D#7|C#m|B|D#7|D#7:
 [EXO — Monster (I,V,P,D)] {Fm} :Fm|Fm|Fm|Fm:
 [EXO — Monster (C,O)] {Fm} :F///Bbm/|Bbm|Bbm///F/|F:
 [EXO — Monster (B)] {Fm} :Ddim|Ddim|Db|C|Bbm|C:
@@ -164,6 +236,11 @@
 [ITZY — LOCO (C,D)] {Fm} :Fm|Cm|Db|C:
 [ITZY — Sneakers (AP)] {G} :G|G|G|D//C//:
 [ITZY — Sneakers (P)] {G} :C//D//|G//Em//|C//D//|G//Em//|C//D//|D#dim//Em//|F|G:
+[ITZY — Sooo Lucky (I,V)] {B} :B|B|E|E//F#//:
+[ITZY — Sooo Lucky (P)] {B} :C#m|G#m|B//C#m//|E:
+[ITZY — Sooo Lucky (C)] {B} :B|B|E|E:
+[ITZY — Sooo Lucky (Po)] {B} :G#m|F#|E|C#m|B|B|E|E//F#//:
+[ITZY — Sooo Lucky (B)] {B} :C#m//B//|E|C#m//B//|G#m|C#m//B//|E|G//A//|F#:
 [ITZY — Sorry Not Sorry (I,V,C)] {Em} :Em|Em|Em|G//A//:
 [ITZY — Sorry Not Sorry (P)] {Em} :E|E|D|D|A|A|C|D:
 [ITZY — Sorry Not Sorry (B)] {Em} :E|E|C|C|E|E|C|C|E|E|C|C|Am|Am|C|C:
@@ -183,6 +260,7 @@
 [IVE — Love Dive (C)] {C#m} :C#m|G#|C#m|G#:
 [IVE — Love Dive (Po)] {C#m} :A|B|C#m|E:
 [IVE — Love Dive (B)] {C#m} :C#m|C#m|C#m|C#m:
+[Jung Kook — Stay Alive (A)] {Dm} :Dm7|Am7|Gm7|Gm7:
 [Jung Kook — Still With You (I,D,V,O)] {F#m} :F#m7//G#m7//|C#m7//C#7sus4/C#m7/|D#m7//G#m7//|C#m7:
 [Jung Kook — Still With You (P,C)] {F#m} :F#m7//G#m7//|C#m7//F#m7//|D#m7//G#m7//|C#m7|F#m7//G#m7//|C#m7//F#m7//|D#m7//G#m7//|F#m7:
 [Kep1er — MVSK (V)] {Bb} :Bb|Bb|F|F|Bb|Bb|F|F|Bb|Bb|Fsus4|F|Bb|Bb|Fsus4|F:
