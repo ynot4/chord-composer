@@ -263,6 +263,11 @@
 [Jung Kook — Stay Alive (A)] {Dm} :Dm7|Am7|Gm7|Gm7:
 [Jung Kook — Still With You (I,D,V,O)] {F#m} :F#m7//G#m7//|C#m7//C#7sus4/C#m7/|D#m7//G#m7//|C#m7:
 [Jung Kook — Still With You (P,C)] {F#m} :F#m7//G#m7//|C#m7//F#m7//|D#m7//G#m7//|C#m7|F#m7//G#m7//|C#m7//F#m7//|D#m7//G#m7//|F#m7:
+[Kep1er — Another Dream (I,V)] {F} :F|F|Am|Am:
+[Kep1er — Another Dream (P)] {F} :Dm//Em//|F|Dm//Em//|Ab//Bb//:
+[Kep1er — Another Dream (C)] {F} :F|Em//Am//|Dm//G//|C:
+[Kep1er — Another Dream (V)] {F} :F|F|C|Am:
+[Kep1er — Another Dream (B)] {F} :Bb|Am|G|F#m7b5|Dm|Em|Bb//Am//|G:
 [Kep1er — MVSK (V)] {Bb} :Bb|Bb|F|F|Bb|Bb|F|F|Bb|Bb|Fsus4|F|Bb|Bb|Fsus4|F:
 [Kep1er — MVSK (P)] {Bb} :Db//C7//|Fm//Bb7//|Db//C7//|Fm:
 [Kep1er — MVSK (C)] {Bb} :Db|C7|Fm|Fm|Db|C7|Fm|Fm:
@@ -270,6 +275,9 @@
 [Kep1er — MVSK (V)] {Bb} :F|F|Bb|Bb:
 [Kep1er — MVSK (P)] {Bb} :Bbm//Eb//|Fm//Bb7//|Bbm//C7//|Fsus4//Fm//|Db//C7//|Fm//Bb7//|Db//C7//|Fm:
 [Kep1er — MVSK (B)] {Bb} :F|F|Bb|Bb|Db|Db|Eb|Eb:
+[Kep1er — Up! (I,V,P,Po,D,O)] {Ab} :Ab|Ab|Ab|Ab:
+[Kep1er — Up! (C,B)] {Ab} :E//Dbm//|Ebm//Abm//|E//Dbm//|Ebm//Abm//:
+[Kep1er — Up! (E)] {Ab} :Abm|E|Gb|Abm|E//Gb//|Fdim//E//|Ab:
 [Kep1er — Wa Da Da (I)] {Fm} :Fm|Eb|Cm|Fm:
 [Kep1er — Wa Da Da (V,C,Po)] {Fm} :F|F|F|F:
 [Kep1er — Wa Da Da (P)] {Fm} :Fm|Fm|Fm|Fm|Fm//Eb//|Ab//Bb//|Csus4|C7:
@@ -285,10 +293,15 @@
 [LOONA — Paint The Town (V)] {Ebm} :Ebm|Ebm|Ebm|Ebm|Ebm|Ebm|Ebm|Ebm|Ebm|Abm|B|Bb|Ebm|Abm|B|Bb:
 [LOONA — Paint The Town (B)] {Ebm} :Ebm|Bb|B|Abm|Gm|Abm|B|Bb:
 [LOONA — Paint The Town (D)] {Ebm} :Ebm|Ebm|Ebm|Ebm:
+[LOONA — Star / Voice (I,P,B)] {D} :D///E/|F#m//C#m//|D|E:
+[LOONA — Star / Voice (V)] {D} :F#m|Bm|D|E:
+[LOONA — Star / Voice (C,Po,O)] {D} :F#m|Bm|D|A//E//:
 [Nayeon — Pop! (I,V,P,Po,B)] {D} :D|D|D|D:
 [Nayeon — Pop! (C)] {D} :A#|C|D|D:
 [Nayeon (ft. Felix) — No Problem (V,P,B)] {G#m} :G#m|C|D#m//F#//|B:
 [Nayeon (ft. Felix) — No Problem (C)] {G#m} :G#m|C|D#m//F#//|B|G#m|C|D#m//F#//|B|G#m|C|D#m//F#//|B|G#m|C|B|D#m//C#//:
+[NCT Dream — Beatbox (AB)] {Db} :Db///Fm/|Bbm///Gb/|Db///Fm/|Bbm///Gb/:
+[NCT Dream — Beatbox (B)] {Db} :Db|A|Abm|Gb|Db|A|Gbm|Gb/E/D/Ab:
 [NCT Dream — Chewing Gum (I)] {Db} :Db//Gb//|Db//Gb//|Db//Gb//|Ab:
 [NCT Dream — Chewing Gum (V,Po,B)] {Db} :Db|Db|Db|Db:
 [NCT Dream — Chewing Gum (P)] {Db} :Db|Db|Db|Db|Db|Db|Ab|Ab:
@@ -308,6 +321,11 @@
 [NCT Dream — Hello Future (V)] {Db} :Db|Db|Db|Db|Db//B//|Bbm//Gbm|Db//B//|Bbm//Gbm:
 [NCT Dream — Hello Future (P)] {Db} :Db//B//|Bbm//Gbm|Db|Db:
 [NCT Dream — Hello Future (C,B,O)] {Db} :Db|Gb//Gbm|Db|Gb//Gbm:
+[NCT 127 — Favorite (I)] {Bbm} :Bbm|Eb|Ab|Db|Gm7b5|C|F|F:
+[NCT 127 — Favorite (V)] {Bbm} :F|F|F|F|Fm|Fm|Fm|Fm:
+[NCT 127 — Favorite (P)] {Bbm} :Db|Eb|Cm|Db|Db|Eb|C7|C7:
+[NCT 127 — Favorite (C,E,O)] {Bbm} :Bbm|Eb|Ab|Db|Gm7b5|C7|F|F:
+[NCT 127 — Favorite (B)] {Bbm} :B|Db|Gb|Gb|Fm|Fm|C7|C7:
 [NCT 127 — Kick It (I,C,E,D)] {F#m} :F#m|F#m|F#m|F#m:
 [NCT 127 — Kick It (V)] {F#m} :D|G|F#m|Em|A|D|C#7|F#m:
 [NCT 127 — Kick It (P)] {F#m} :G|G|F#m|F#m:
