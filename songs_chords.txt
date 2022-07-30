@@ -556,5 +556,5 @@
 [WayV — Turn Back Time (I,O)] {D#m} :D#m//Em//|D#m//Em//|D#m//Em//|D#m//Em//:
 [WayV — Turn Back Time (V,Po,D)] {D#m} :D#m|D#m|D#m|D#m:
 [WayV — Turn Back Time (P)] {D#m} :D#m|C#|Cm|B:
-[WayV — Turn Back Time (C)] {D#m} :D#m///F#/|F#|B///G#/|G#|D#m///F#/|F#|B///A/#|A#:
+[WayV — Turn Back Time (C)] {D#m} :D#m///F#/|F#|B///G#/|G#|D#m///F#/|F#|B///A#/|A#:
 [WayV — Turn Back Time (B)] {D#m} :F#|A#|D#m|F#|Cm|B|A#|A#:
