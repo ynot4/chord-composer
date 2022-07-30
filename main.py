@@ -114,12 +114,12 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
         return total_beats
 
     while count_beats() < length*4:
-        r = random.choices((4, 2), weights=[5, 2])[0]
+        r = random.choices((4, 2), weights=[4, 2])[0]
 
         if lengths_of_chords:
             if len(lengths_of_chords) >= 2:
                 if lengths_of_chords[-1] == 2 and lengths_of_chords[-2] != 2:
-                    r = random.choices((4, 2), weights=[2, 5])[0]
+                    r = 2
 
         lengths_of_chords.append(r)
         if count_beats() > length*4:
@@ -190,14 +190,14 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
         else:
             if not beats_running_total % 4:  # if beat number divisible by four (start of bar)
                 if lengths_of_chords[j] == 4:
-                    string += "|" + composition[j]
+                    string += " | " + composition[j]
                 elif lengths_of_chords[j] == 2:
-                    string += "|" + composition[j] + "//"
+                    string += " | " + composition[j] + "//"
             else:  # if in middle of bar
                 if lengths_of_chords[j] == 4:
-                    string += composition[j] + "//|" + composition[j] + "//"
+                    string += " " + composition[j] + "// | " + composition[j] + "//"
                 elif lengths_of_chords[j] == 2:
-                    string += composition[j] + "//"
+                    string += " " + composition[j] + "//"
 
         beats_running_total += lengths_of_chords[j]
 
@@ -207,7 +207,7 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
 def main():
     transposed_progressions, pychord_transposed_progressions, song_sections, song_keys = get_chords_from_file("songs_chords.txt")
 
-    transpose_by = random.randrange(0, 12)
+    transpose_by = 0
     tonality = random.choice(("major", "minor"))
 
     # g = graph, s = possible starting chords, k = keys of starting chords

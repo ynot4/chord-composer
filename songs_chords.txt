@@ -337,6 +337,8 @@
 [NMIXX — O.O (E)] {Em} :A|A|A|A:
 [NMIXX — O.O (V)] {Em} :A|G|D|F:
 [NMIXX — O.O (B)] {Em} :A|D|Bm|D:
+[Red Velvet — Bad Boy (AB)] {Em} :Em|A|D|D:
+[Red Velvet — Bad Boy (B)] {Em} :G|A|Bm|F#m|G|A|D|D:
 [Red Velvet — Feel My Rhythm (I)] {Db} :Db|Ab|Bbm|Ab|Gb|Eb7|Ab|Gb|Fm|Bb7|Ebm|Cdim|Db|Bbm//Eb//|Ab|Ab:
 [Red Velvet — Feel My Rhythm (V)] {Db} :Db|Db|Db|Db|Db|Db|Gb|Gb:
 [Red Velvet — Feel My Rhythm (P)] {Db} :Db|Cdim//F7//|Bbm|Abm//Db//|Gb|Eb7|Ab|Ab:
@@ -345,6 +347,8 @@
 [Red Velvet — Feel My Rhythm (B)] {Db} :Ab|Gb|Fm|Ebm|Bb7|Ddim|Ebm|Db|F7|F7|Bbm|Bbm|Bbm//Gb//|F7|F7|Bbm:
 [Red Velvet — Feel My Rhythm (D)] {Db} :Db|Cdim//F7//|Bbm|Cdim|Ab:
 # [Red Velvet — Feel My Rhythm (C)] {Db} :Eb|Ddim//G7//|Cm|Bb//Eb//|Ab|F7|Bb|Ab|Gm|C7|Fm|Abm|Eb|Cm//F//|Bb|Bb:
+[Red Velvet — Psycho (AB)] {Eb} :Eb|G7|Cm|Ab:
+[Red Velvet — Psycho (B)] {Eb} :Ab|G7|Cm|F|Ab|Gm|Cm|B:
 [Red Velvet — Rainbow Halo (I,P,Po,O)] {F} :Db|Eb|F|F:
 [Red Velvet — Rainbow Halo (V)] {F} :F|F|F|F|Db|Db|Db|Db|F|F|F|F|Db|Db|Db|Bbm//C//:
 [Red Velvet — Rainbow Halo (C)] {F} :F|F|F|F|Db|Eb|F|F:
@@ -360,6 +364,7 @@
 [STAYC — Beautiful Monster (I)] {Gb} :B|B/Abm//Gb/|Gb|Gb|Ebm|Ebm/Gb//Bbm/|Bbm|Bbm:
 [STAYC — Beautiful Monster (V,C,B)] {Gb} :B|B/Abm//Gb/|Gb|Gb|Ebm|Ebm|Bbm|Bbm:
 [STAYC — Beautiful Monster (P)] {Gb} :B|B/Abm//Gb/|Gb|Gb|Ebm|Ebm|Bbm|Bbm|Abm|Abm|Bm|Bm:
+[STAYC — Complex (A)] {Dm} :Dm7|G|C7|F///Edim/|Dm7|G|C7|F:
 [STAYC — RUN2U (I)] {Em} :E|E|E|E|C|D|E|E:
 [STAYC — RUN2U (V)] {Em} :E|E|E|E|C|D|E|E|E|E|E|E|C|D|B7|B7:
 [STAYC — RUN2U (P)] {Em} :Em|F#m|G|G:
@@ -370,6 +375,9 @@
 [STAYC — So Bad (C)] {Gm} :Eb|Eb|Bb|Bb|Dm|Dm|Gm|Gm:
 [STAYC — So Bad (Po)] {Gm} :Cm|Cm|D7|D7:
 [STAYC — So Bad (B)] {Gm} :Eb|Eb|Bb|Bb|Cm|Cm|Gm|F|Eb|Eb|C|C|F|F|D|D:
+[STAYC — Young Luv (I,D)] {Eb} :Eb|Eb|Gm|F:
+[STAYC — Young Luv (C,V,P)] {Eb} :Eb|Eb|Gm|F//Bb//:
+[STAYC — Young Luv (B)] {Eb} :Eb|Bb|D7|Gm:
 [Stray Kids — All In (I,V)] {Am} :Am|Am|Am|Am:
 [Stray Kids — All In (V)] {Am} :Am//C//|F//G//|Am//C//|F//Em//:
 [Stray Kids — All In (P)] {Am} :Dm|G|Am|G|Dm|G|Am|C:
@@ -382,8 +390,24 @@
 [Stray Kids — Any (B)] {Bbm} :Bbm|Bbm|Gb|Gb|Gb|Ab|Bbm|Bbm:
 [Stray Kids — Chronosaurus (I,V,P,B)] {Dm} :Dm|Dm|A|A:
 [Stray Kids — Chronosaurus (C,Po)] {Dm} :Dm|Dm|Gm|A:
+[Stray Kids — Christmas EveL (I)] {Fm} :Bbm|Ab|Bbm|Fm:
+[Stray Kids — Christmas EveL (V,D,O)] {Fm} :Fm|Fm|Fm|Fm:
+[Stray Kids — Christmas EveL (P)] {Fm} :Fm//Cm//|Db/C7//Fm//|Fm//Cm//|Db/C7//Fm//:
+[Stray Kids — Christmas EveL (C)] {Fm} :Fm///Gbm/|Fm///Gbm/|Fm///Gbm/|Fm:
+[Stray Kids — Christmas EveL (V)] {Fm} :Bbm|Cm|Fm|Fm:
+[Stray Kids — Christmas EveL (B)] {Fm} :Db|Cm|Fm|Fm:
+[Stray Kids — District 9 (I,V)] {Em} :Em|Em///D/|Em|Em///D/:
+[Stray Kids — District 9 (C)] {Em} :Em|D|C|B7:
+[Stray Kids — District 9 (Po)] {Em} :Em|Em|Em|Em:
+[Stray Kids — District 9 (B)] {Em} :Em//C//|C//D//|Em//C//|C//D//|C|C//D//|C|C//D//:
+[Stray Kids — Get Cool (A)] {G} :G|D|A|Bm:
 [Stray Kids — God's Menu (AP)] {Fm} :Fm|Fm|Fm|Fm:
 [Stray Kids — God's Menu (P)] {Fm} :Fm///Db/|Db|Ab///Eb/|Eb|Fm///Db/|Db|Ab///Eb/|Eb|Db|C|F|Bb|Db|Db|C|C:
+[Stray Kids — Haven (I,C)] {F#m} :F#m|C#m|D|F6:
+[Stray Kids — Haven (V)] {F#m} :F#m|C#m|D|E|F#m|C#m|D|E|F#m|C#m|D|F6|F#m|C#m|D|F6:
+[Stray Kids — Haven (P)] {F#m} :D|E|F#m|C#m|D|E|F#m|C#m|D|E|F:
+[Stray Kids — Haven (Po,O)] {F#m} :F#m|C#m|D|F6|F#m|C#m|D|E:
+[Stray Kids — Haven (E)] {F#m} :F#m//E//|D//C#m//|Bm|E:
 [Stray Kids — Hoodie Season (V)] {F#} :F#|B|E|A:
 [Stray Kids — Hoodie Season (P,V,B)] {F#} :F#|D#m|B|Bm:
 [Stray Kids — Hoodie Season (C,D)] {F#} :B|F#|B|F#:
@@ -393,13 +417,49 @@
 [Stray Kids — Levanter (I,V,B)] {D} :D|A|E///Fdim/|F#m//E//:
 [Stray Kids — Levanter (P)] {D} :D//Bm//|C#m//F#m//|D//Bm//|C#|:
 [Stray Kids — Levanter (C,D)] {D} :D|A|C#|F#m//E//:
+[Stray Kids — Lonely St. (A)] {Em} :Em|C|G|D:
 [Stray Kids — Maniac (I,P)] {G#m} :G#m|G#m|G#m|G#m:
 [Stray Kids — Maniac (V)] {G#m} :G#m|E|B|F#:
 [Stray Kids — Maniac (C,D)] {G#m} :G#|F#//A//|G#|F#//A//:
 [Stray Kids — Maniac (B)] {G#m} :E|E|D#7|D#7|G#m|G#m|F#m|B|E|E|D#7|D#7|G#m|G#m|G#|G#:
+[Stray Kids — Miroh (I)] {C#m} :C#m|C#m|C#m|C#m:
+[Stray Kids — Miroh (E,V,P,C,O)] {C#m} :A//G#m//|C#m//B//|A//G#m//|C#m//B//:
+[Stray Kids — Miroh (Po)] {C#m} :A//G#m//|C#m//B//|A//G#m//|C#m//B//|A//G#m//|C#m//B//|A//G#m//|C#m:
+[Stray Kids — My Pace (I,V,C,Po)] {G} :G|F#|Bm|Bm|G|F#|Bm|Bm:
+[Stray Kids — My Pace (P)] {G} :G|G|A|A|G|G|F#|F#:
+[Stray Kids — My Pace (B)] {G} :G|F#|Bm|Bm|G|F#|Bm|Bm|G|F#|Bm|A|G|F#|Bm|A:
+[Stray Kids — My Universe (I)] {Gb} :Gb//Ab//|Bbm//Fm//|Gb//Ab//|Bbm:
+[Stray Kids — My Universe (V)] {Gb} :Gb//Ab//|Bbm//Fm//|Gb//Ab//|Bbm//Ab/Db/:
+[Stray Kids — My Universe (P)] {Gb} :Ebm|Fm|Gbm|Gbm:
+[Stray Kids — My Universe (C)] {Gb} :Gb//Ab//|Bbm//Fm//|Gb//F7//|Bbm//Bb//|Ebm//Ab//|Db//Gm7b5//|Ebm//F7//|Bbm//Bb//:
+[Stray Kids — My Universe (Po)] {Gb} :Ebm//F7//|Bbm//Db//|Ebm//F7//|Bbm//Db//|Ebm//F7//|Bbm//Db//|Gb//F7//|Bbm:
+[Stray Kids — My Universe (B)] {Gb} :Gb//F7//|Bbm//Db//|Ebm//F7//|Bbm//Db//|Gb//F7//|Bbm:
+[Stray Kids — Phobia (I,V)] {D#m} :D#m|B|F#|G#:
+[Stray Kids — Phobia (P)] {D#m} :D#m|B|F#|C#|D#m|B|F#|G#:
+[Stray Kids — Phobia (C)] {D#m} :D#m|B|F#|C#:
+[Stray Kids — Phobia (B)] {D#m} :D#m///C#/|C#|F#///B/|B|D#m///C#/|C#|F#///B/|B|D#m///C#/|C#|F#///B/|B|D#m///C#/|C#|F#///G#/|G#:
+[Stray Kids — Scars (I,C,V,B)] {Bb} :Bb|C|Dm|Dm:
+[Stray Kids — Scars (V)] {Bb} :Bb|Am|Dm|Dm:
+[Stray Kids — Scars (P)] {Bb} :Bb|C|Dm|Dm|Bb|Am|Dm|Dm:
+[Stray Kids — Silent Cry (V)] {Fm} :Fm|Fm|Ddim|Ddim|Db|Cm|Gm|C:
+[Stray Kids — Silent Cry (P)] {Fm} :Fm|Fm|Fm|Fm:
+[Stray Kids — Silent Cry (C,D)] {Fm} :Db//Eb/C/|Fm//Ab//|Db//Eb/C/|Fm//Ab//|Db//Eb/C/|Fm//Ab//|Db//Eb//|Fm:
+[Stray Kids — Silent Cry (V)] {Fm} :Db//Fsus4//|Fsus4|Db//Fsus4//|Fsus4|Db//Fsus4//|Fsus4|Db//Fsus4//|Gm//C//:
+[Stray Kids — Silent Cry (B)] {Fm} :Fsus4|Fsus4|Fsus4|Fsus4:
 [Stray Kids — Slump (A)] {Em} :Em|C|G|D:
+[Stray Kids — Star Lost (I)] {C} :Am|F|Dm|Em:
+[Stray Kids — Star Lost (V,C,B)] {C} :C|F|Am|G:
+[Stray Kids — Star Lost (V)] {C} :C|F|C|F:
+[Stray Kids — Star Lost (P,V)] {C} :C|F|Am|F:
+[Stray Kids — Star Lost (Po,O)] {C} :C|F|Am|G//F//:
+[Stray Kids — The View (AP)] {Gb} :Gb|Gb//Db//|Ab|Ab//Bbm//:
+[Stray Kids — The View (P)] {Gb} :Bbm|Db|Ab|Gb:
 [Stray Kids — Waiting For Us (I,V,E,B)] {Eb} :Eb|Fm|Ab|Ab:
 [Stray Kids — Waiting For Us (C,Po)] {Eb} :Eb|Fm|Ab|Ab|Eb|Fm|Ab|Ab|Cm|Cm|Bb|Bb|Ab|Ab|Abm|Abm:
+[Stray Kids — Winter Falls (A)] {Em} :Em|A|F#m|Bm:
+[Stray Kids — 24 to 25 (I,V)] {E} :E//A//|B//C#m//|E//A//|B//C#m//:
+[Stray Kids — 24 to 25 (P)] {E} :A|Am|G#m|C#m|B|F#m|B|B:
+[Stray Kids — 24 to 25 (C,O)] {E} :E//A//|B//C#m//|E//A//|E//C#m//:
 [Treasure — Beautiful (I)] {C} :C|G|Am//G//|F:
 [Treasure — Beautiful (V,C,B)] {C} :C|F|Am//G//|F:
 [Treasure — Beautiful (P)] {C} :Em//F//|G//Am//|Em//F//|G:
@@ -412,6 +472,7 @@
 [TWICE — Cry For Me (I,V,P)] {Cm} :Cm|F|Bb|D:
 [TWICE — Cry For Me (C,D)] {Cm} :Gm//Cm//|F//Bb//|Eb//Cm//|D|Gm//Cm//|F//Bb//|Eb//Cm//|D|Gm:
 [TWICE — Cry For Me (B)] {Cm} :Eb//F//|Gm|Eb//Cm//|D:
+[TWICE — Dance The Night Away (A)] {F} :F//Gm//|Bb//C//|F//Gm//|Bb//C//:
 [TWICE — Doughnut (I)] {Bbm} :Bbm//Eb//|Ab//F7//|Db|Bbm//Eb//|Fsus4|F:
 [TWICE — Doughnut (V)] {Bbm} :Db|Cm//Fm//|Gb|Fsus4//Eb//|Db|Cm//F7//|Gb/Fm/Ebm//|Abm//Db//|Gb///Fm/|Ebm|F7:
 [TWICE — Doughnut (C)] {Bbm} :Bbm//Eb//|Ab//F7//|Bbm//C7//|Fsus4|F|Bbm//Eb//|Ab//F7//|Db|Bbm//Eb//|Fsus4|F:
@@ -433,6 +494,10 @@
 [TWICE — Like OOH-AHH (V)] {F#} :F#|F#|F#|F#|F#|F#|F#|F#|F#|F#|Bm|Bm|F#|F#|Bm|Bm:
 [TWICE — Like OOH-AHH (B)] {F#} :F#|Bm|G#m|A#m:
 [TWICE — Like OOH-AHH (D)] {F#} :F#|F#|F#|F#:
+[TWICE — Likey (I,V,P)] {C} :C|Am|Em|D:
+[TWICE — Likey (C,D)] {C} :Am|C|Em|D:
+[TWICE — Likey (B)] {C} :C|D|G|C|Am|Am|Bm|B:
+[TWICE — Likey (E)] {C} :Am|C|Em|D|Am|Am|Em|D:
 [TWICE — Moonlight (AP)] {Cm} :Cm7|D#7|A#m7|Fm7:
 [TWICE — Moonlight (P)] {Cm} :Dm7b5|Gm7|G#|Fm7|Dm7b5|Gm7|G#|A#sus4:
 [TWICE — More & More (V)] {Bb} :Bbmaj7|C|Am|Bbmaj7:
@@ -449,6 +514,9 @@
 [TWICE — What is Love? (B)] {Ab} :Ab|Cm|Fm|Db:
 [TXT — Anti-Romantic (AP)] {Eb} :Eb|Cm|Ab|Bb:
 [TXT — Anti-Romantic (P)] {Eb} :Ab//Bb//|Cm//Eb//|Ab//Bb//:
+[TXT — Ghosting (I,V,C,B)] {A} :A|A|D|D|F#m|F#m|D|E:
+[TXT — Ghosting (E)] {A} :A|A|D|E:
+[TXT — Ghosting (P)] {A} :A|A|A|E:
 [TXT — Good Boy Gone Bad (V,C,Po,O)] {C#m} :C#m|C#m|C#m|G#:
 [TXT — Good Boy Gone Bad (P,B)] {C#m} :C#m|D#dim|E|G#:
 [TXT — Ito (I,D)] {Bb} :Bb//Cm//|Gm//Eb//:
@@ -485,3 +553,8 @@
 [WayV — Love Talk (Po)] {F#m} :F#m|Bm|E|A|D|Bm|C#7|C#7:
 [WayV — Love Talk (B)] {F#m} :D|Bm|E|A|D|G#m7b5|C#7|C#7:
 [WayV — Love Talk (D)] {F#m} :F#m|F#m|F#m|F#m:
+[WayV — Turn Back Time (I,O)] {D#m} :D#m//Em//|D#m//Em//|D#m//Em//|D#m//Em//:
+[WayV — Turn Back Time (V,Po,D)] {D#m} :D#m|D#m|D#m|D#m:
+[WayV — Turn Back Time (P)] {D#m} :D#m|C#|Cm|B:
+[WayV — Turn Back Time (C)] {D#m} :D#m///F#/|F#|B///G#/|G#|D#m///F#/|F#|B///A/#|A#:
+[WayV — Turn Back Time (B)] {D#m} :F#|A#|D#m|F#|Cm|B|A#|A#:
