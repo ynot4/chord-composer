@@ -34,7 +34,7 @@ def get_chords_from_file(file_path):
                 line_chords_only = re.sub(r":", "", line_chords_only)  # remove colon characters :
                 text += line_chords_only
 
-    text = ' '.join(text.split())  # turn whitespace into just spaces
+    text = " ".join(text.split())  # turn whitespace into just spaces
     chord_progressions = text.split()  # split on spaces again, create list
     chord_progressions = resolve_progressions(file_path, song_keys, chord_progressions)
 
@@ -267,42 +267,42 @@ def main():
         match i:
             case "Intro":
                 m = get_multiplier(intro, "")
-                print("Intro       :" + intro + ":  x" + str(m))
+                print("Intro       : " + intro + " :  x" + str(m))
                 for i in range(m):
                     playlist.append("chord_midi/0 - intro.mid")
             case "Verse":
                 m = get_multiplier(verse)
-                print("Verse       :" + verse + ":  x" + str(m))
+                print("Verse       : " + verse + " :  x" + str(m))
                 for i in range(m):
                     playlist.append("chord_midi/1 - verse.mid")
             case "Pre-chorus":
                 m = get_multiplier(prechorus, "")
-                print("Pre-chorus  :" + prechorus + ":  x" + str(m))
+                print("Pre-chorus  : " + prechorus + " :  x" + str(m))
                 for i in range(m):
                     playlist.append("chord_midi/2 - prechorus.mid")
             case "Chorus":
                 m = get_multiplier(chorus)
-                print("Chorus      :" + chorus + ":  x" + str(m))
+                print("Chorus      : " + chorus + " :  x" + str(m))
                 for i in range(m):
                     playlist.append("chord_midi/3 - chorus.mid")
             case "Post-chorus":
                 m = get_multiplier(postchorus, "")
-                print("Post-chorus :" + postchorus + ":  x" + str(m))
+                print("Post-chorus : " + postchorus + " :  x" + str(m))
                 for i in range(m):
                     playlist.append("chord_midi/4 - postchorus.mid")
             case "Bridge":
                 m = get_multiplier(bridge)
-                print("Bridge      :" + bridge + ":  x" + str(m))
+                print("Bridge      : " + bridge + " :  x" + str(m))
                 for i in range(m):
                     playlist.append("chord_midi/5 - bridge.mid")
             case "Interlude":
                 m = get_multiplier(interlude)
-                print("Interlude   :" + interlude + ":  x" + str(m))
+                print("Interlude   : " + interlude + " :  x" + str(m))
                 for i in range(m):
                     playlist.append("chord_midi/6 - interlude.mid")
             case "Outro":
                 m = get_multiplier(outro)
-                print("Outro       :" + outro + ":  x" + str(m))
+                print("Outro       : " + outro + " :  x" + str(m))
                 for i in range(m):
                     playlist.append("chord_midi/7 - outro.mid")
 
