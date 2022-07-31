@@ -96,26 +96,26 @@ def create_midi(chords, section, progression_length, chord_lengths):
     midi_data.instruments.append(piano)
     midi_data.instruments.append(bass)
 
-    if section == "intro":
-        num = 0
-    elif section == "verse":
-        num = 1
-    elif section == "prechorus":
-        num = 2
-    elif section == "chorus":
-        num = 3
-    elif section == "postchorus":
-        num = 4
-    elif section == "bridge":
-        num = 5
-    elif section == "interlude":
-        num = 6
-    elif section == "outro":
-        num = 7
-    else:
-        num = 8
+    # if section == "intro":
+    #     num = 0
+    # elif section == "verse":
+    #     num = 1
+    # elif section == "prechorus":
+    #     num = 2
+    # elif section == "chorus":
+    #     num = 3
+    # elif section == "postchorus":
+    #     num = 4
+    # elif section == "bridge":
+    #     num = 5
+    # elif section == "interlude":
+    #     num = 6
+    # elif section == "outro":
+    #     num = 7
+    # else:
+    #     num = 8
 
-    file_name = f"chord_midi/{num} - {section}.mid"
+    file_name = f"chord_midi/{section}.mid"
     midi_data.write(file_name)
 
 

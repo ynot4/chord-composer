@@ -19,10 +19,7 @@
 # Important! Do not enter slash chords, enter the basic parent chord instead. ("C" instead of "C/G" or "C/F" etc.)
 
 # The only time signature supported at the moment is 4/4.
-# Do not use curly brackets () in the song name.
-
-# [test — minor (A)] {Cm} :Cm|F|Bb|Gm:
-# [test — major (A)] {G} :G|Bm|Em|Em:
+# Do not use round brackets () in the song name.
 
 [aespa — Black Mamba (AB)] {Em} :Em//G/Am/|Em//G/Am/|Em//G/Am/|Em//G/Am/:
 [aespa — Black Mamba (B)] {Em} :C|Am|Em|D:

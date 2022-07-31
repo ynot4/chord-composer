@@ -35,7 +35,7 @@ def get_chords_from_file(file_path):
                 text += line_chords_only
 
     text = text.replace(" ", "")  # turn whitespace into just spaces
-    chord_progressions = text.split()  # split on spaces again, create list
+    chord_progressions = text.split()  # split on spaces, create list
     chord_progressions = resolve_progressions(file_path, song_keys, chord_progressions)
 
     transposed_progressions, pychord_transposed_progressions = get_transposed_progressions(song_keys, chord_progressions)
@@ -103,6 +103,7 @@ def make_graph(transposed_progressions, song_sections, section, song_keys):
 
 
 def compose(g, starting_chords, starting_chords_keys, section, transpose_by, tonality):
+    # length = 16
     length = (random.choices((1, 2, 4), weights=[12, 8, 1]))[0] * 4  # length of chord progression: 4, 8, 16 bars
 
     lengths_of_chords = []  # how many beats in the bar the chord uses
@@ -114,12 +115,12 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
         return total_beats
 
     while count_beats() < length*4:
-        r = random.choices((4, 2), weights=[4, 2])[0]
+        r = random.choices((4, 2), weights=[3, 1])[0]
 
         if lengths_of_chords:
             if len(lengths_of_chords) >= 2:
                 if lengths_of_chords[-1] == 2 and lengths_of_chords[-2] != 2:
-                    r = 2
+                    r = random.choices((4, 2), weights=[1, 2])[0]
 
         lengths_of_chords.append(r)
         if count_beats() > length*4:
@@ -182,6 +183,10 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
 
     string = ""
     beats_running_total = int()
+    # is_long_progression = False
+    # if length == 16:
+    #     is_long_progression = True
+
     for j in range(len(composition)):
         if not string:
             string += composition[j]
@@ -198,6 +203,29 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
                     string += " " + composition[j] + "// | " + composition[j] + "//"
                 elif lengths_of_chords[j] == 2:
                     string += " " + composition[j] + "//"
+            # if not beats_running_total % 4:  # if beat number divisible by four (start of bar)
+            #     if lengths_of_chords[j] == 4:
+            #         string += " | " + composition[j]
+            #     if is_long_progression and beats_running_total == 28:
+            #         string += " | \n           "
+            #     if lengths_of_chords[j] == 2:
+            #         string += " | " + composition[j] + "//"
+            # else:  # if in middle of bar
+            #     if is_long_progression and beats_running_total == 30:
+            #         if lengths_of_chords[j] == 4:
+            #             string += " " + composition[j] + "// | " + "\n            | " + composition[j] + "//"
+            #         elif lengths_of_chords[j] == 2:
+            #             string += " " + composition[j] + "// | "
+            #     if is_long_progression and beats_running_total == 32:
+            #         if lengths_of_chords[j] == 4:
+            #             string += " " + composition[j] + "// | " + "\n            | " + composition[j] + "//"
+            #         elif lengths_of_chords[j] == 2:
+            #             string += " " + composition[j] + "// | " + "\n            | "
+            #     else:
+            #         if lengths_of_chords[j] == 4:
+            #             string += " " + composition[j] + "// | " + composition[j] + "//"
+            #         elif lengths_of_chords[j] == 2:
+            #             string += " " + composition[j] + "//"
 
         beats_running_total += lengths_of_chords[j]
 
@@ -235,6 +263,9 @@ def main():
     outro_g, outro_s, outro_k = make_graph(transposed_progressions, song_sections, "outro", song_keys)
     outro = compose(outro_g, outro_s, outro_k, "outro", transpose_by, tonality)
 
+    outro_g, other_s, other_k = make_graph(transposed_progressions, song_sections, "other", song_keys)
+    other = compose(outro_g, other_s, other_k, "other", transpose_by, tonality)
+
     song_name = "SONG NAME"
     artist = "ARTIST"
     tonic = find_tonic(transpose_by, tonality)
@@ -261,62 +292,71 @@ def main():
                 multiplier = 1
         return multiplier
 
-    playlist = []  # list of midi files to play to create song
+    def create_playlist():
+        playlist = []  # list of midi files to play to create song
 
-    for i in s:
-        match i:
-            case "Intro":
-                m = get_multiplier(intro, "")
-                print("Intro       : " + intro + " :  x" + str(m))
-                for i in range(m):
-                    playlist.append("chord_midi/0 - intro.mid")
-            case "Verse":
-                m = get_multiplier(verse)
-                print("Verse       : " + verse + " :  x" + str(m))
-                for i in range(m):
-                    playlist.append("chord_midi/1 - verse.mid")
-            case "Pre-chorus":
-                m = get_multiplier(prechorus, "")
-                print("Pre-chorus  : " + prechorus + " :  x" + str(m))
-                for i in range(m):
-                    playlist.append("chord_midi/2 - prechorus.mid")
-            case "Chorus":
-                m = get_multiplier(chorus)
-                print("Chorus      : " + chorus + " :  x" + str(m))
-                for i in range(m):
-                    playlist.append("chord_midi/3 - chorus.mid")
-            case "Post-chorus":
-                m = get_multiplier(postchorus, "")
-                print("Post-chorus : " + postchorus + " :  x" + str(m))
-                for i in range(m):
-                    playlist.append("chord_midi/4 - postchorus.mid")
-            case "Bridge":
-                m = get_multiplier(bridge)
-                print("Bridge      : " + bridge + " :  x" + str(m))
-                for i in range(m):
-                    playlist.append("chord_midi/5 - bridge.mid")
-            case "Interlude":
-                m = get_multiplier(interlude)
-                print("Interlude   : " + interlude + " :  x" + str(m))
-                for i in range(m):
-                    playlist.append("chord_midi/6 - interlude.mid")
-            case "Outro":
-                m = get_multiplier(outro)
-                print("Outro       : " + outro + " :  x" + str(m))
-                for i in range(m):
-                    playlist.append("chord_midi/7 - outro.mid")
+        for i in s:
+            match i:
+                case "Intro":
+                    m = get_multiplier(intro, "")
+                    print("Intro       : " + intro + " :  x" + str(m))
+                    for i in range(m):
+                        playlist.append("chord_midi/intro.mid")
+                case "Verse":
+                    m = get_multiplier(verse)
+                    print("Verse       : " + verse + " :  x" + str(m))
+                    for i in range(m):
+                        playlist.append("chord_midi/verse.mid")
+                case "Pre-chorus":
+                    m = get_multiplier(prechorus, "")
+                    print("Pre-chorus  : " + prechorus + " :  x" + str(m))
+                    for i in range(m):
+                        playlist.append("chord_midi/prechorus.mid")
+                case "Chorus":
+                    m = get_multiplier(chorus)
+                    print("Chorus      : " + chorus + " :  x" + str(m))
+                    for i in range(m):
+                        playlist.append("chord_midi/chorus.mid")
+                case "Post-chorus":
+                    m = get_multiplier(postchorus, "")
+                    print("Post-chorus : " + postchorus + " :  x" + str(m))
+                    for i in range(m):
+                        playlist.append("chord_midi/postchorus.mid")
+                case "Bridge":
+                    m = get_multiplier(bridge)
+                    print("Bridge      : " + bridge + " :  x" + str(m))
+                    for i in range(m):
+                        playlist.append("chord_midi/bridge.mid")
+                case "Interlude":
+                    m = get_multiplier(interlude)
+                    print("Interlude   : " + interlude + " :  x" + str(m))
+                    for i in range(m):
+                        playlist.append("chord_midi/interlude.mid")
+                case "Outro":
+                    m = get_multiplier(outro)
+                    print("Outro       : " + outro + " :  x" + str(m))
+                    for i in range(m):
+                        playlist.append("chord_midi/outro.mid")
+                case "Other":
+                    m = get_multiplier(other)
+                    print("Other       : " + other + " :  x" + str(m))
+                    for i in range(m):
+                        playlist.append("chord_midi/other.mid")
 
-    for p in playlist:
-        play_midi(p)
+        for p in playlist:
+            play_midi(p)
+
+    create_playlist()
 
 
 if __name__ == '__main__':
     user_exit = False
     main()
     while not user_exit:
-        user_input = input("Press R to replay or X to quit. Press any other key to generate a new progression.\n")
+        user_input = input("Press X to quit. Press any other key to generate a new progression.\n")
+        # user_input = input("Press R to replay or X to quit. Press any other key to generate a new progression.\n")
         if user_input.lower() == "r":
-            pass
+            main()
         elif user_input.lower() == "x":
             user_exit = True
         else:
