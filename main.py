@@ -409,15 +409,15 @@ if __name__ == '__main__':
             input("Press enter to generate a new progression.")
             cls()
             playlist = main()
-            print("Press Ctrl + C stop playback.")
+            print("Press Ctrl + C to stop playback.")
             try:
                 for p in playlist:
                     play_midi(p)
+                    print("")
             except KeyboardInterrupt:
                 stop_midi()
                 print("Playback stopped.\n")
                 time.sleep(1)
-            print("")
             v = 1
 
         print("Input R to replay, E to export MIDI files, or X to quit.")
@@ -443,7 +443,7 @@ if __name__ == '__main__':
             if confirm.lower() == "c":
                 cls()
                 playlist = main()
-                print("Press Ctrl + C stop playback.")
+                print("Press Ctrl + C to stop playback.")
                 try:
                     for p in playlist:
                         play_midi(p)
