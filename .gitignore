@@ -1,7 +1,6 @@
 /test.py
 /to-do.txt
 chord_midi/*
-!chord_midi/drums_4_bars.mid
-!chord_midi/drums_8_bars.mid
-!chord_midi/drums_16_bars.mid
+!chord_midi/drums
+!chord_midi/drums/*
 /songs_chords_test.txt
