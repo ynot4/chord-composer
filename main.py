@@ -429,13 +429,15 @@ if __name__ == '__main__':
             user_exit = True
 
         else:
-            cls()
-            playlist = main()
-            print("Press Ctrl + C stop playback.")
-            try:
-                for p in playlist:
-                    play_midi(p)
-            except KeyboardInterrupt:
-                stop_midi()
-                print("Playback stopped.\n")
-                time.sleep(1)
+            confirm = input("Confirm create new? Input N to cancel.\n")
+            if confirm != "n":
+                cls()
+                playlist = main()
+                print("Press Ctrl + C stop playback.")
+                try:
+                    for p in playlist:
+                        play_midi(p)
+                except KeyboardInterrupt:
+                    stop_midi()
+                    print("Playback stopped.\n")
+                    time.sleep(1)
