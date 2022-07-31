@@ -1,4 +1,5 @@
 import random, re
+import mido
 from transposer import get_transposed_progressions
 from tonic import resolve_progressions, find_tonic
 from midi import create_midi, play_midi
@@ -293,7 +294,7 @@ def main():
         return multiplier
 
     def create_playlist():
-        playlist = []  # list of midi files to play to create song
+        creating_playlist = []  # list of midi files to play to create song
 
         for i in s:
             match i:
@@ -301,52 +302,65 @@ def main():
                     m = get_multiplier(intro, "")
                     print("Intro       : " + intro + " :  x" + str(m))
                     for i in range(m):
-                        playlist.append("chord_midi/intro.mid")
+                        creating_playlist.append("chord_midi/intro.mid")
                 case "Verse":
                     m = get_multiplier(verse)
                     print("Verse       : " + verse + " :  x" + str(m))
                     for i in range(m):
-                        playlist.append("chord_midi/verse.mid")
+                        creating_playlist.append("chord_midi/verse.mid")
                 case "Pre-chorus":
                     m = get_multiplier(prechorus, "")
                     print("Pre-chorus  : " + prechorus + " :  x" + str(m))
                     for i in range(m):
-                        playlist.append("chord_midi/prechorus.mid")
+                        creating_playlist.append("chord_midi/prechorus.mid")
                 case "Chorus":
                     m = get_multiplier(chorus)
                     print("Chorus      : " + chorus + " :  x" + str(m))
                     for i in range(m):
-                        playlist.append("chord_midi/chorus.mid")
+                        creating_playlist.append("chord_midi/chorus.mid")
                 case "Post-chorus":
                     m = get_multiplier(postchorus, "")
                     print("Post-chorus : " + postchorus + " :  x" + str(m))
                     for i in range(m):
-                        playlist.append("chord_midi/postchorus.mid")
+                        creating_playlist.append("chord_midi/postchorus.mid")
                 case "Bridge":
                     m = get_multiplier(bridge)
                     print("Bridge      : " + bridge + " :  x" + str(m))
                     for i in range(m):
-                        playlist.append("chord_midi/bridge.mid")
+                        creating_playlist.append("chord_midi/bridge.mid")
                 case "Interlude":
                     m = get_multiplier(interlude)
                     print("Interlude   : " + interlude + " :  x" + str(m))
                     for i in range(m):
-                        playlist.append("chord_midi/interlude.mid")
+                        creating_playlist.append("chord_midi/interlude.mid")
                 case "Outro":
                     m = get_multiplier(outro)
                     print("Outro       : " + outro + " :  x" + str(m))
                     for i in range(m):
-                        playlist.append("chord_midi/outro.mid")
+                        creating_playlist.append("chord_midi/outro.mid")
                 case "Other":
                     m = get_multiplier(other)
                     print("Other       : " + other + " :  x" + str(m))
                     for i in range(m):
-                        playlist.append("chord_midi/other.mid")
+                        creating_playlist.append("chord_midi/other.mid")
 
-        for p in playlist:
-            play_midi(p)
+        return creating_playlist
 
-    create_playlist()
+    total_seconds = float()
+
+    playlist = create_playlist()
+    for p in playlist:
+        mid = mido.MidiFile(p)
+        total_seconds += mid.length
+
+    def convert(seconds):
+        minutes, sec = divmod(seconds, 60)
+        return "%02d:%02d" % (minutes, sec)
+
+    print("\nLength " + convert(total_seconds))
+
+    for p in playlist:
+        play_midi(p)
 
 
 if __name__ == '__main__':
