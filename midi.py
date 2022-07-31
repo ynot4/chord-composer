@@ -74,7 +74,7 @@ def create_midi(chords, section, progression_length, chord_lengths):
     midi_data.instruments.append(bass)
     piano_only.instruments.append(piano)
 
-    file_name = f"chord_midi/{section}.mid"
+    file_name = f"chord_midi/full/{section}.mid"
     piano_file_name = f"chord_midi/piano/{section}.mid"
     midi_data.write(file_name)
     piano_only.write(piano_file_name)
