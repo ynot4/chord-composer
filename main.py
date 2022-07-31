@@ -413,7 +413,7 @@ if __name__ == '__main__':
             try:
                 for p in playlist:
                     play_midi(p)
-                    print("")
+                print("")
             except KeyboardInterrupt:
                 stop_midi()
                 print("Playback stopped.\n")
@@ -424,9 +424,11 @@ if __name__ == '__main__':
         user_input = input("Input any other key to generate a new progression.\n")
 
         if user_input.lower() == "r":
+            print("Press Ctrl + C to stop playback.")
             try:
                 for p in playlist:
                     play_midi(p)
+                print("")
             except KeyboardInterrupt:
                 stop_midi()
                 print("Playback stopped.\n")
@@ -447,6 +449,7 @@ if __name__ == '__main__':
                 try:
                     for p in playlist:
                         play_midi(p)
+                    print("")
                 except KeyboardInterrupt:
                     stop_midi()
                     print("Playback stopped.\n")
