@@ -363,7 +363,9 @@ def main():
         minutes, sec = divmod(seconds, 60)
         return "%02d:%02d" % (minutes, sec)
 
-    print("\nLength " + convert(total_seconds))
+    print("Length " + convert(total_seconds))
+    with open("chord_midi/chords.txt", "a") as output_txt:
+        output_txt.write("\nLength " + convert(total_seconds))
 
     return playlist
 
@@ -415,6 +417,7 @@ if __name__ == '__main__':
                 stop_midi()
                 print("Playback stopped.\n")
                 time.sleep(1)
+            print("")
             v = 1
 
         print("Input R to replay, E to export MIDI files, or X to quit.")
