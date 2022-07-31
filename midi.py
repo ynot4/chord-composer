@@ -103,7 +103,4 @@ def play_midi(midi_filename):
 
 
 def stop_midi():
-    stop_playback = input("To stop playback, press enter. ")
-    while stop_playback:
-        pygame.mixer.music.stop()
-
+    pygame.mixer.music.stop()

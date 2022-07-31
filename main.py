@@ -1,11 +1,12 @@
-import random, re
-import mido
+import os, random, re, time, mido
+from tkinter import filedialog, messagebox
 from transposer import get_transposed_progressions
 from tonic import resolve_progressions, find_tonic
 from midi import create_midi, play_midi, stop_midi
 from pychord import Chord
 from graph import Graph
 from structure import structure_song
+from shutil import copytree, rmtree
 
 
 def get_chords_from_file(file_path):
@@ -360,19 +361,81 @@ def main():
 
     print("\nLength " + convert(total_seconds))
 
-    for p in playlist:
-        play_midi(p)
+    return playlist
 
 
 if __name__ == '__main__':
-    # user_exit = False
-    main()
-    # while not user_exit:
-    #     user_input = input("Press X to quit. Press any other key to generate a new progression.\n")
-    #     # user_input = input("Press R to replay or X to quit. Press any other key to generate a new progression.\n")
-    #     if user_input.lower() == "r":
-    #         main()
-    #     elif user_input.lower() == "x":
-    #         user_exit = True
-    #     else:
-    #         main()
+    user_exit = False
+    v = 0
+    export_file_path = ""
+    playlist = []
+
+    def export_to():
+        global export_file_path
+        is_empty = filedialog.askdirectory(title="Choose a folder to export MIDI files to")
+        if is_empty != "":
+            export_file_path = is_empty.replace("/", "\\")
+
+            to_directory = os.path.join(export_file_path, "chord_midi")
+            from_directory = "chord_midi"
+            if os.path.exists(to_directory):
+                if messagebox.askokcancel(title="Exporting MIDI files", message="Folder 'chord_midi' already exists in this location. "
+                                                                                "Overwrite?"):
+                    rmtree(to_directory)
+                    copytree(from_directory, to_directory)
+                    print("\nMIDIs exported to " + to_directory + "\n")
+                    time.sleep(1)
+                else:
+                    print("Exporting MIDIs cancelled.\n")
+                    time.sleep(1)
+        else:
+            print("Exporting MIDIs cancelled.\n")
+            time.sleep(1)
+
+    def cls():  # clear terminal
+        print("\033[H\033[J", end="")
+
+    while not user_exit:
+        if v == 0:
+            input("Press enter to generate a new progression.")
+            cls()
+            playlist = main()
+            print("Press Ctrl + C stop playback.")
+            try:
+                for p in playlist:
+                    play_midi(p)
+            except KeyboardInterrupt:
+                stop_midi()
+                print("Playback stopped.\n")
+                time.sleep(1)
+            v = 1
+
+        print("Input R to replay, E to export MIDI files, or X to quit.")
+        user_input = input("Input any other key to generate a new progression.\n")
+
+        if user_input.lower() == "r":
+            try:
+                for p in playlist:
+                    play_midi(p)
+            except KeyboardInterrupt:
+                stop_midi()
+                print("Playback stopped.\n")
+                time.sleep(1)
+
+        elif user_input.lower() == "e":
+            export_to()
+
+        elif user_input.lower() == "x":
+            user_exit = True
+
+        else:
+            cls()
+            playlist = main()
+            print("Press Ctrl + C stop playback.")
+            try:
+                for p in playlist:
+                    play_midi(p)
+            except KeyboardInterrupt:
+                stop_midi()
+                print("Playback stopped.\n")
+                time.sleep(1)
