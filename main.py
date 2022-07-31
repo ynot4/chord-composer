@@ -376,22 +376,25 @@ if __name__ == '__main__':
 
     def export_to():
         global export_file_path
-        is_empty = filedialog.askdirectory(title="Choose a folder to export MIDI files to")
-        if is_empty != "":
-            export_file_path = is_empty.replace("/", "\\")
+        selected_folder = filedialog.askdirectory(title="Choose a folder to export MIDI files to")
+        if selected_folder != "":
+            export_file_path = selected_folder.replace("/", "\\")
 
             to_directory = os.path.join(export_file_path, "chord_midi")
             from_directory = "chord_midi"
+            cancel = False
             if os.path.exists(to_directory):
                 if messagebox.askokcancel(title="Exporting MIDI files", message="Folder 'chord_midi' already exists in this location. "
                                                                                 "Overwrite?"):
                     rmtree(to_directory)
-                    copytree(from_directory, to_directory)
-                    print("\nMIDIs exported to " + to_directory + "\n")
-                    time.sleep(1)
                 else:
                     print("Exporting MIDIs cancelled.\n")
                     time.sleep(1)
+                    cancel = True
+            if not cancel:
+                copytree(from_directory, to_directory)
+                print("\nMIDIs exported to " + to_directory + "\n")
+                time.sleep(1)
         else:
             print("Exporting MIDIs cancelled.\n")
             time.sleep(1)
@@ -433,8 +436,8 @@ if __name__ == '__main__':
             user_exit = True
 
         else:
-            confirm = input("Confirm create new? Input N to cancel.\n")
-            if confirm != "n":
+            confirm = input("Confirm create new? Input C to confirm, or any other letter to cancel.\n")
+            if confirm.lower() == "c":
                 cls()
                 playlist = main()
                 print("Press Ctrl + C stop playback.")
