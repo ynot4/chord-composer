@@ -120,8 +120,9 @@ def compose(g, starting_chords, starting_chords_keys, section, transpose_by, ton
 
         if lengths_of_chords:
             if len(lengths_of_chords) >= 2:
-                if lengths_of_chords[-1] == 2 and lengths_of_chords[-2] != 2:
-                    r = random.choices((4, 2), weights=[1, 2])[0]
+                if count_beats() % 4:
+                    if lengths_of_chords[-1] == 4:
+                        r = 2
 
         lengths_of_chords.append(r)
         if count_beats() > length*4:
