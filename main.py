@@ -297,54 +297,58 @@ def main():
 
     def create_playlist():
         creating_playlist = []  # list of midi files to play to create song
-
+        output = ""
         for i in s:
             match i:
                 case "Intro":
                     m = get_multiplier(intro, "")
-                    print("Intro       : " + intro + " :  x" + str(m))
+                    output += "Intro       : " + intro + " :  x" + str(m) + "\n"
                     for i in range(m):
                         creating_playlist.append("chord_midi/full/intro.mid")
                 case "Verse":
                     m = get_multiplier(verse)
-                    print("Verse       : " + verse + " :  x" + str(m))
+                    output += "Verse       : " + verse + " :  x" + str(m) + "\n"
                     for i in range(m):
                         creating_playlist.append("chord_midi/full/verse.mid")
                 case "Pre-chorus":
                     m = get_multiplier(prechorus, "")
-                    print("Pre-chorus  : " + prechorus + " :  x" + str(m))
+                    output += "Pre-chorus  : " + prechorus + " :  x" + str(m) + "\n"
                     for i in range(m):
                         creating_playlist.append("chord_midi/full/prechorus.mid")
                 case "Chorus":
                     m = get_multiplier(chorus)
-                    print("Chorus      : " + chorus + " :  x" + str(m))
+                    output += "Chorus      : " + chorus + " :  x" + str(m) + "\n"
                     for i in range(m):
                         creating_playlist.append("chord_midi/full/chorus.mid")
                 case "Post-chorus":
                     m = get_multiplier(postchorus, "")
-                    print("Post-chorus : " + postchorus + " :  x" + str(m))
+                    output += "Post-chorus : " + postchorus + " :  x" + str(m) + "\n"
                     for i in range(m):
                         creating_playlist.append("chord_midi/full/postchorus.mid")
                 case "Bridge":
                     m = get_multiplier(bridge)
-                    print("Bridge      : " + bridge + " :  x" + str(m))
+                    output += "Bridge      : " + bridge + " :  x" + str(m) + "\n"
                     for i in range(m):
                         creating_playlist.append("chord_midi/full/bridge.mid")
                 case "Interlude":
                     m = get_multiplier(interlude)
-                    print("Interlude   : " + interlude + " :  x" + str(m))
+                    output += "Interlude   : " + interlude + " :  x" + str(m) + "\n"
                     for i in range(m):
                         creating_playlist.append("chord_midi/full/interlude.mid")
                 case "Outro":
                     m = get_multiplier(outro)
-                    print("Outro       : " + outro + " :  x" + str(m))
+                    output += "Outro       : " + outro + " :  x" + str(m) + "\n"
                     for i in range(m):
                         creating_playlist.append("chord_midi/full/outro.mid")
                 case "Other":
                     m = get_multiplier(other)
-                    print("Other       : " + other + " :  x" + str(m))
+                    output += "Other       : " + other + " :  x" + str(m) + "\n"
                     for i in range(m):
                         creating_playlist.append("chord_midi/full/other.mid")
+
+        print(output)
+        with open("chord_midi/chords.txt", "w") as output_txt:
+            output_txt.write(f"{song_name} by {artist} (Key: {tonic} {tonality})\n\n" + output)
 
         return creating_playlist
 
