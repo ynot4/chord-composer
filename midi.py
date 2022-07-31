@@ -136,5 +136,13 @@ def play_midi(midi_filename):
     clock = pygame.time.Clock()
     pygame.mixer.music.load(midi_filename)
     pygame.mixer.music.play()
+
     while pygame.mixer.music.get_busy():
         clock.tick(30)  # check if playback has finished
+
+
+def stop_midi():
+    stop_playback = input("To stop playback, press enter. ")
+    while stop_playback:
+        pygame.mixer.music.stop()
+

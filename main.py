@@ -2,7 +2,7 @@ import random, re
 import mido
 from transposer import get_transposed_progressions
 from tonic import resolve_progressions, find_tonic
-from midi import create_midi, play_midi
+from midi import create_midi, play_midi, stop_midi
 from pychord import Chord
 from graph import Graph
 from structure import structure_song
@@ -288,7 +288,7 @@ def main():
                 multiplier = 1
         else:  # if intro, pre-chorus or post-chorus, these should be shorter than other sections
             if l == 4:
-                multiplier = (random.choices((1, 2), weights=[1, 4]))[0]  # how many times to loop the chord progression
+                multiplier = (random.choices((1, 2), weights=[1, 6]))[0]  # how many times to loop the chord progression
             else:
                 multiplier = 1
         return multiplier
@@ -364,14 +364,14 @@ def main():
 
 
 if __name__ == '__main__':
-    user_exit = False
+    # user_exit = False
     main()
-    while not user_exit:
-        user_input = input("Press X to quit. Press any other key to generate a new progression.\n")
-        # user_input = input("Press R to replay or X to quit. Press any other key to generate a new progression.\n")
-        if user_input.lower() == "r":
-            main()
-        elif user_input.lower() == "x":
-            user_exit = True
-        else:
-            main()
+    # while not user_exit:
+    #     user_input = input("Press X to quit. Press any other key to generate a new progression.\n")
+    #     # user_input = input("Press R to replay or X to quit. Press any other key to generate a new progression.\n")
+    #     if user_input.lower() == "r":
+    #         main()
+    #     elif user_input.lower() == "x":
+    #         user_exit = True
+    #     else:
+    #         main()
