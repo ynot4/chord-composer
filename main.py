@@ -363,11 +363,13 @@ def main():
         minutes, sec = divmod(seconds, 60)
         return "%02d:%02d" % (minutes, sec)
 
-    print("Length " + convert(total_seconds))
+    tempo = 120
+
+    print("Tempo " + str(tempo) + ", Length " + convert(total_seconds))
     with open("chord_midi/chords.txt", "a") as output_txt:
         output_txt.write("\nLength " + convert(total_seconds))
 
-    return playlist
+    return playlist, bridge, chorus, interlude, intro, other, outro, postchorus, prechorus, verse
 
 
 if __name__ == '__main__':
@@ -377,16 +379,20 @@ if __name__ == '__main__':
     playlist = []
 
     def export_to():
+        print("Enter the name of the folder to export to (not the file path)")
+        chord_midi_name = input("Leave blank for 'chord_midi': ")
+        if not chord_midi_name:
+            chord_midi_name = "chord_midi"
+        print("Choose a folder to export MIDI files to.")
         global export_file_path
         selected_folder = filedialog.askdirectory(title="Choose a folder to export MIDI files to")
         if selected_folder != "":
             export_file_path = selected_folder.replace("/", "\\")
-
-            to_directory = os.path.join(export_file_path, "chord_midi")
+            to_directory = os.path.join(export_file_path, chord_midi_name)
             from_directory = "chord_midi"
             cancel = False
             if os.path.exists(to_directory):
-                if messagebox.askokcancel(title="Exporting MIDI files", message="Folder 'chord_midi' already exists in this location. "
+                if messagebox.askokcancel(title="Exporting MIDI files", message=f"Folder '{chord_midi_name}' already exists in this location. "
                                                                                 "Overwrite?"):
                     rmtree(to_directory)
                 else:
@@ -408,7 +414,7 @@ if __name__ == '__main__':
         if v == 0:
             input("Press enter to generate a new progression.")
             cls()
-            playlist = main()
+            playlist, bridge, chorus, interlude, intro, other, outro, postchorus, prechorus, verse = main()
             print("Press Ctrl + C to stop playback.")
             try:
                 for p in playlist:
@@ -420,7 +426,7 @@ if __name__ == '__main__':
                 time.sleep(1)
             v = 1
 
-        print("Input R to replay, E to export MIDI files, or X to quit.")
+        print("Input R to replay the whole song, P to replay a specific section, E to export MIDI files, or X to quit.")
         user_input = input("Input any other key to generate a new progression.\n")
 
         if user_input.lower() == "r":
@@ -428,6 +434,66 @@ if __name__ == '__main__':
             try:
                 for p in playlist:
                     play_midi(p)
+                print("")
+            except KeyboardInterrupt:
+                stop_midi()
+                print("Playback stopped.\n")
+                time.sleep(1)
+
+        elif user_input.lower() == "p":
+            number = ""
+            while type(number) != int:
+                print("Input the number of the progression you want to play.")
+                time.sleep(1)
+                number = input("""
+0 — bridge
+1 — chorus
+2 — interlude
+3 — intro
+4 — other
+5 — outro
+6 — post-chorus
+7 — pre-chorus
+8 — verse
+
+""")
+                if number.isdigit():
+                    if not 0 <= int(number) <= 8:
+                        number = ""
+                try:
+                    number = int(number)
+                except ValueError:
+                    print("Please input a number from 0 to 8.\n")
+
+            try:
+                match number:
+                    case 0:
+                        print("Bridge      : " + bridge + " :")
+                        play_midi("chord_midi/full/bridge.mid")
+                    case 1:
+                        print("Chorus      : " + chorus + " :")
+                        play_midi("chord_midi/full/chorus.mid")
+                    case 2:
+                        print("Interlude   : " + interlude + " :")
+                        play_midi("chord_midi/full/interlude.mid")
+                    case 3:
+                        print("Intro       : " + intro + " :")
+                        play_midi("chord_midi/full/intro.mid")
+                    case 4:
+                        print("Other       : " + other + " :")
+                        play_midi("chord_midi/full/other.mid")
+                    case 5:
+                        print("Outro       : " + outro + " :")
+                        play_midi("chord_midi/full/outro.mid")
+                    case 6:
+                        print("Post-chorus : " + postchorus + " :")
+                        play_midi("chord_midi/full/postchorus.mid")
+                    case 7:
+                        print("Pre-chorus  : " + prechorus + " :")
+                        play_midi("chord_midi/full/prechorus.mid")
+                    case 8:
+                        print("Verse       : " + verse + " :")
+                        play_midi("chord_midi/full/verse.mid")
                 print("")
             except KeyboardInterrupt:
                 stop_midi()
@@ -444,7 +510,7 @@ if __name__ == '__main__':
             confirm = input("Confirm create new? Input C to confirm, or any other letter to cancel.\n")
             if confirm.lower() == "c":
                 cls()
-                playlist = main()
+                playlist, bridge, chorus, interlude, intro, other, outro, postchorus, prechorus, verse = main()
                 print("Press Ctrl + C to stop playback.")
                 try:
                     for p in playlist:
