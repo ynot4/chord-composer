@@ -21,6 +21,9 @@
 # The only time signature supported at the moment is 4/4.
 # Do not use round brackets () in the song name.
 
+# [test — minor (A)] {Am} : Am | F | C | G :
+# [test — major (A)] {C} : C | Am | F | G :
+
 [aespa — Black Mamba (AB)] {Em} :Em//G/Am/|Em//G/Am/|Em//G/Am/|Em//G/Am/:
 [aespa — Black Mamba (B)] {Em} :C|Am|Em|D:
 [aespa — Dreams Come True (I)] {Dm} :Dm|Dm|Dm|Dm:

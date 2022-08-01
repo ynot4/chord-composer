@@ -392,8 +392,8 @@ if __name__ == '__main__':
             from_directory = "chord_midi"
             cancel = False
             if os.path.exists(to_directory):
-                if messagebox.askokcancel(title="Exporting MIDI files", message=f"Folder '{chord_midi_name}' already exists in this location. "
-                                                                                "Overwrite?"):
+                if messagebox.askokcancel(title="Exporting MIDI files", message=f"Folder '{chord_midi_name}' already exists in this "
+                                                                                "location. Overwrite?"):
                     rmtree(to_directory)
                 else:
                     print("Exporting MIDIs cancelled.\n")
@@ -426,7 +426,7 @@ if __name__ == '__main__':
                 time.sleep(1)
             v = 1
 
-        print("Input R to replay the whole song, P to replay a specific section, E to export MIDI files, or X to quit.")
+        print("Input R to replay the whole song, P to play a specific section, E to export MIDI files, or X to quit.")
         user_input = input("Input any other key to generate a new progression.\n")
 
         if user_input.lower() == "r":
@@ -444,7 +444,7 @@ if __name__ == '__main__':
             number = ""
             while type(number) != int:
                 print("Input the number of the progression you want to play.")
-                time.sleep(1)
+                time.sleep(0.5)
                 number = input("""
 0 — bridge
 1 — chorus
