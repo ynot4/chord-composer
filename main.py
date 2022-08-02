@@ -366,8 +366,8 @@ def main():
     tempo = 120
 
     print("Tempo " + str(tempo) + ", Length " + convert(total_seconds))
-    with open("chord_midi/chords.txt", "a") as output_txt:
-        output_txt.write("\nLength " + convert(total_seconds))
+    # with open("chord_midi/chords.txt", "a") as output_txt:
+    #     output_txt.write("\nTempo " + str(tempo) + ", Length " + convert(total_seconds))
 
     return playlist, bridge, chorus, interlude, intro, other, outro, postchorus, prechorus, verse
 
