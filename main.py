@@ -105,8 +105,8 @@ def make_graph(transposed_progressions, song_sections, section, song_keys):
 
 
 def compose(g, starting_chords, starting_chords_keys, section, transpose_by, tonality):
-    # length = 16
-    length = (random.choices((1, 2, 4), weights=[12, 8, 1]))[0] * 4  # length of chord progression: 4, 8, 16 bars
+    length = (random.choices((1, 2), weights=[4, 1]))[0] * 4
+    # length = (random.choices((1, 2, 4), weights=[12, 8, 1]))[0] * 4  # length of chord progression: 4, 8, 16 bars
 
     lengths_of_chords = []  # how many beats in the bar the chord uses
 
@@ -401,6 +401,10 @@ if __name__ == '__main__':
                     cancel = True
             if not cancel:
                 copytree(from_directory, to_directory)
+                rmtree(to_directory + "/drums")
+                for path, subdirs, files in os.walk(to_directory):  # fix time metadata
+                    for name in files:
+                        os.utime(os.path.join(path, name), (time.time(), time.time()))
                 print("\nMIDIs exported to " + to_directory + "\n")
                 time.sleep(1)
         else:
