@@ -211,6 +211,11 @@
 [ENHYPEN (ft. Yeonjun) — Blockbuster (P)] {G#m} :C#m|B|D#7|G#m|C#m|B|D#7|D#7:
 [ENHYPEN (ft. Yeonjun) — Blockbuster (C,Po)] {G#m} :E|F#|G#m|G#m:
 [ENHYPEN (ft. Yeonjun) — Blockbuster (B)] {G#m} :G#m|E|C#m|D#7|G#m|E|C#m|D#7|G#m|E|C#m|D#7|C#m|B|D#7|D#7:
+[EXO — Don't Fight the Feeling (V,C)] {Dm} :Dm//F//|Em//Am//|Dm//F//|Em//Am//:
+[EXO — Don't Fight the Feeling (P)] {Dm} :Dm|F|Em|Am:
+[EXO — Don't Fight the Feeling (B)] {Dm} :F|E7|Am|Gm//C//:
+[EXO — MAMA (AP)] {Am} :Am|B7|Bb|Am:
+[EXO — MAMA (P)] {Am} :C//B7//|Bb//Am//|C//B7//|F//E7//:
 [EXO — Monster (I,V,P,D)] {Fm} :Fm|Fm|Fm|Fm:
 [EXO — Monster (C,O)] {Fm} :F///Bbm/|Bbm|Bbm///F/|F:
 [EXO — Monster (B)] {Fm} :Ddim|Ddim|Db|C|Bbm|C:
@@ -268,6 +273,11 @@
 [Kep1er — Another Dream (C)] {F} :F|Em//Am//|Dm//G//|C:
 [Kep1er — Another Dream (V)] {F} :F|F|C|Am:
 [Kep1er — Another Dream (B)] {F} :Bb|Am|G|F#m7b5|Dm|Em|Bb//Am//|G:
+[Kep1er — Attention (V)] {Bb} :Bb|Bb|Bb|Bb:
+[Kep1er — Attention (P)] {Bb} :Eb|Bb|Eb|Bb|Eb|Bb|Eb//F//:
+[Kep1er — Attention (C,O)] {Bb} :Cm|F|Bb|Gm|Eb|F|Bb|Gm:
+[Kep1er — Attention (D)] {Bb} :Gm//Eb//|Cm//D//|Gm//Eb//|Cm:
+[Kep1er — Attention (B)] {Bb} :Eb|Cm|Gm|Bb//Cm//|Eb|F|Gm|Gm:
 [Kep1er — MVSK (V)] {Bb} :Bb|Bb|F|F|Bb|Bb|F|F|Bb|Bb|Fsus4|F|Bb|Bb|Fsus4|F:
 [Kep1er — MVSK (P)] {Bb} :Db//C7//|Fm//Bb7//|Db//C7//|Fm:
 [Kep1er — MVSK (C)] {Bb} :Db|C7|Fm|Fm|Db|C7|Fm|Fm:
@@ -285,6 +295,7 @@
 [Kep1er — Wa Da Da (B)] {Fm} :F|F|Bb|C:
 [LE SSERAFIM — Blue Flame (A)] {E} :E|Cmaj7|Am7|Am7//D/B7/:
 [LE SSERAFIM — Sour Grapes (A)] {F#m} :F#m7|B7|G#m7|C#sus4//C#7//:
+[LE SSERAFIM — The Great Mermaid (A)] {C} :C//Eb//|F//Gm//|C//Eb//|F//Bb//:
 [LOONA — Paint The Town (I)] {Ebm} :Eb|Eb|Eb|Eb:
 [LOONA — Paint The Town (V)] {Ebm} :Eb|Eb|Eb|Eb|Eb|Eb|Eb|Eb|Ebm|Abm|B|Bb|Ebm|Abm|B|Bb:
 [LOONA — Paint The Town (P)] {Ebm} :Ebm|Ebm|Ebm|Ebm|Ebm//Ddim//|Db//Cdim//|B|Bb:
@@ -296,6 +307,13 @@
 [LOONA — Star / Voice (I,P,B)] {D} :D///E/|F#m//C#m//|D|E:
 [LOONA — Star / Voice (V)] {D} :F#m|Bm|D|E:
 [LOONA — Star / Voice (C,Po,O)] {D} :F#m|Bm|D|A//E//:
+[LOONA — Why Not? (V)] {Am} :Am|Dm|Am|Dm:
+[LOONA — Why Not? (P,V,O)] {Am} :Am|G|D|F:
+[LOONA — Why Not? (C)] {Am} :A|A|A|A:
+[LOONA — Why Not? (Po)] {Am} :A|G|A|G:
+[LOONA — Why Not? (B)] {Am} :A|D|Bm7|C:
+[LOONA/ODD EYE CIRCLE — Girl Front (AB)] {E} :Emaj7|Emaj7///Gaug/|Abm7///Gm7/|F#m7//B7//:
+[LOONA/ODD EYE CIRCLE — Girl Front (B)] {E} :Emaj7|F#|Abm7|Abm7|Emaj7|F#|Ebm7|Ab|G|G|F#|F#:
 [Nayeon — Pop! (I,V,P,Po,B)] {D} :D|D|D|D:
 [Nayeon — Pop! (C)] {D} :A#|C|D|D:
 [Nayeon (ft. Felix) — No Problem (V,P,B)] {G#m} :G#m|C|D#m//F#//|B:
@@ -514,6 +532,11 @@
 [TWICE — What is Love? (B)] {Ab} :Ab|Cm|Fm|Db:
 [TXT — Anti-Romantic (AP)] {Eb} :Eb|Cm|Ab|Bb:
 [TXT — Anti-Romantic (P)] {Eb} :Ab//Bb//|Cm//Eb//|Ab//Bb//:
+[TXT — Blue Orangeade (V)] {Dm} :Dm7|Dm7|Gm7|Am7|Dm7|Dm7|Gm7|Em7//Am7//:
+[TXT — Blue Orangeade (P)] {Dm} :Dm7|Dm7|Gm7|Am7:
+[TXT — Blue Orangeade (C,Po)] {Dm} :Dm7|G7|Em7|Am7:
+[TXT — Blue Orangeade (B)] {Dm} :Fmaj7|Em7|Em7|Dm7:
+[TXT — Drama (A)] {Bm} :Bm///C#m/|D///E///|F#m//F/E/|Bmaj9:
 [TXT — Ghosting (I,V,C,B)] {A} :A|A|D|D|F#m|F#m|D|E:
 [TXT — Ghosting (E)] {A} :A|A|D|E:
 [TXT — Ghosting (P)] {A} :A|A|A|E:
@@ -553,6 +576,7 @@
 [WayV — Love Talk (Po)] {F#m} :F#m|Bm|E|A|D|Bm|C#7|C#7:
 [WayV — Love Talk (B)] {F#m} :D|Bm|E|A|D|G#m7b5|C#7|C#7:
 [WayV — Love Talk (D)] {F#m} :F#m|F#m|F#m|F#m:
+[WayV — Regular (A)] {A} :A|Dm|A|Dm:
 [WayV — Turn Back Time (I,O)] {D#m} :D#m//Em//|D#m//Em//|D#m//Em//|D#m//Em//:
 [WayV — Turn Back Time (V,Po,D)] {D#m} :D#m|D#m|D#m|D#m:
 [WayV — Turn Back Time (P)] {D#m} :D#m|C#|Cm|B:
